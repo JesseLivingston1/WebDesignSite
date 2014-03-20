@@ -99,7 +99,7 @@ textarea {
 
 
 body {
-background: url("bg.jpg") top center no-repeat;
+background: url("bgd.png") top center no-repeat;
 
 
 }
@@ -115,6 +115,11 @@ width: 100%;
 z-index: 7;
 color: #808080;
 
+}
+
+#hero {
+height: 775px;
+position: relative;
 }
 
 h1 img{
@@ -225,7 +230,7 @@ z-index: 1;
 float: left;
 width: 33.33%;
 height: 875px;
-background: url('') top right no-repeat;
+background: url('WorkLayer3A.png') top right no-repeat;
 }
 
 
@@ -233,27 +238,28 @@ background: url('') top right no-repeat;
 #hero h2 {
 color: #000;
 font-weight: normal;
-font-size: 62px;
+font-size: 30px;
 text-align: center;
 margin: 0 auto;
 float:left;
 
 }
 
-h2 div {
+h2 {
 	font-family:'Museo-500', sans-serif;
-	font-size:30px;
+	font-size:25px;
 	text-align:center;
-	padding-left: 600px;
+	
 	
 	}
 	
 #Jeremy{
 	text-align: center;
-	font-size: 15px;
+	font-size: 16px;
 	color: #999;
-	font-family: san-serif;
-	padding-left:550px;
+	font-family: 'Garamond',sans-serif;
+	padding-left:34%;
+	padding-right:34%;
 	margin: 14px 0 14px 0;
 }
 	}
