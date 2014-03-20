@@ -117,29 +117,28 @@ color: #808080;
 
 }
 
+h1 img{
+	min-width:100%;
+	max-width:100%;
+	
+}
+
 header {
 z-index: 2;
 position: fixed;
 text-align: center;
-font-size: 13px;
-text-transform: uppercase;
 width: 100%;
 height: 212px;
-background: url("brushheader.gif") top center no-repeat;
+background: url("brushheader.png") top center no-repeat;
+
 
 }
 
 
 #logo {
-margin: 25px auto 0 auto;
+margin: 50px auto 0 auto;
 }
 
-#work1 {
-	padding-right:auto;
-	padding-left:600px;
-	padding-top:100px;
-	text-align:center;
-	}
 
 .inner {
 width: 888px;
@@ -188,13 +187,13 @@ background-position: -44px -90px;
 
 #layer1, #layer2, #layer3 {
 position: absolute;
-width: 600%;
+width: 900%;
 height: 875px;
 z-index: 4;
 -webkit-perspective: 1000;
 }
 
-#layer1 .work1, #layer1 .work2, #layer1 .work3 {
+#layer1 .work1 {
 float: left;
 width: 11.11%;
 margin-top: .5%;
@@ -204,13 +203,39 @@ background: url('cello_scroll.png') top left no-repeat;
 
 }
 
+#layer2 {
+width: 600%;
+z-index: 3;
+}
+
+#layer2 .work1{
+float: left;
+width: 16.66%;
+margin-right: 16.66%;
+height: 875px;
+background: url('work1.gif') center 203px no-repeat;
+}
+
+#layer3 {
+width: 300%;
+z-index: 1;
+}
+
+#layer3 .work1 {
+float: left;
+width: 33.33%;
+height: 875px;
+background: url('') top right no-repeat;
+}
+
+
+
 #hero h2 {
 color: #000;
 font-weight: normal;
 font-size: 62px;
 text-align: center;
 margin: 0 auto;
-text-transform: uppercase;
 float:left;
 
 }
@@ -221,6 +246,16 @@ h2 div {
 	text-align:center;
 	padding-left: 600px;
 	
+	}
+	
+#Jeremy{
+	text-align: center;
+	font-size: 15px;
+	color: #999;
+	font-family: san-serif;
+	padding-left:550px;
+	margin: 14px 0 14px 0;
+}
 	}
 
 #hero .desc {
