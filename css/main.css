@@ -273,6 +273,15 @@ margin-left: -280px;
 z-index: 6;
 }
 	
+
+#hero .browse.next:hover {
+background-position: -44px -180px;
+}
+
+#hero .browse:hover {
+background-position: 0 -180px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
