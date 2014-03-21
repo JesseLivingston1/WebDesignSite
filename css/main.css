@@ -99,8 +99,8 @@ textarea {
 
 
 body {
-background: url("bgd.png") top center no-repeat;
-
+background: url("img/bgd.png") top center no-repeat;
+height: 1380px;
 
 }
 
@@ -134,14 +134,14 @@ position: fixed;
 text-align: center;
 width: 100%;
 height: 212px;
-background: url("brushheader.png") top center no-repeat;
+background: url("img/header_bg.png") top center no-repeat;
 
 
 }
 
 
 #logo {
-margin: 50px auto 0 auto;
+margin: 0 auto 0 auto;
 }
 
 
@@ -158,16 +158,20 @@ position: absolute;
 top: 7px;
 left: 62px;
 color: #fff;
-font-family:'Marcellus SC', sans-serif;
+font-family:'Lato', sans-serif;
+font-size:12px;
 }
 
-.title {
+
+
+.service {
 	left:auto;
 	right: 62px;
 	position: absolute;
 	top: 7px;
 	color: white;
-	font-family:'Marcellus SC', sans-serif;
+	font-family:'Lato', sans-serif;
+	font-size:12px;
 	
 	}
 	
@@ -180,7 +184,7 @@ width: 44px;
 height: 90px;
 display: block;
 z-index: 5;
-background: url('hero_nav.png') no-repeat 0 -90px;
+background: url('img/hero_nav.png') no-repeat 0 -90px;
 	
 	}
 
@@ -204,7 +208,7 @@ width: 11.11%;
 margin-top: .5%;
 margin-right: 22.22%;
 height: 875px;
-background: url('cello_scroll.png') top left no-repeat;
+background: url('img/cello_scroll.png') top left no-repeat;
 
 }
 
@@ -218,7 +222,7 @@ float: left;
 width: 16.66%;
 margin-right: 16.66%;
 height: 875px;
-background: url('work1.png') center 203px no-repeat;
+background: url('img/work1.png') center 203px no-repeat;
 }
 
 #layer3 {
@@ -228,9 +232,10 @@ z-index: 1;
 
 #layer3 .work1 {
 float: left;
-width: 33.33%;
+width: 30%;
 height: 875px;
-background: url('') bottom right no-repeat;
+margin:.5% 1% auto 1%;
+background: url('img/work1layer3.png') top center no-repeat;
 }
 
 
@@ -262,7 +267,41 @@ h2 {
 	padding-right:34%;
 	margin: 14px 0 14px 0;
 }
+
+.inner {
+width: 888px;
+margin: 0 auto;
+position: relative;
+text-align: center;
+font-family:'Museo-500', sans-serif;
+font-size: 23px;
+padding-bottom:10px;
+padding-top: 3%;
+}
+
+.email {
+	font-family: sans-serif;
+	text-transform:uppercase;
+	color:black;
+	text-align:center;
+	font-size:11px;
 	}
+	
+a:link {
+	text-decoration:none;
+	color: black;
+	font-family:'Lato', sans-serif;
+	
+	}
+
+footer {
+margin-top:15%;
+font-size: 13px;
+text-transform: uppercase;
+color: #4d4d4d;
+height: 50px;
+text-align:center;
+}
 
 #hero .desc {
 position: absolute;
@@ -272,7 +311,8 @@ width: 560px;
 margin-left: -280px;
 z-index: 6;
 }
-	
+
+
 
 #hero .browse.next:hover {
 background-position: -44px -180px;
@@ -280,7 +320,9 @@ background-position: -44px -180px;
 
 #hero .browse:hover {
 background-position: 0 -180px;
+
 }
+
 
 /* ==========================================================================
    Helper classes
