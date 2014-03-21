@@ -218,7 +218,7 @@ float: left;
 width: 16.66%;
 margin-right: 16.66%;
 height: 875px;
-background: url('work1.gif') center 203px no-repeat;
+background: url('work1.png') center 203px no-repeat;
 }
 
 #layer3 {
@@ -230,7 +230,7 @@ z-index: 1;
 float: left;
 width: 33.33%;
 height: 875px;
-background: url('WorkLayer3A.png') top right no-repeat;
+background: url('') bottom right no-repeat;
 }
 
 
