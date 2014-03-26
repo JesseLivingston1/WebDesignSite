@@ -209,7 +209,7 @@ z-index: 4;
 #layer1 .work1 {
 float: left;
 width: 11.11%;
-margin-top: .2%;
+margin-top: .8%;
 height: 875px;
 background:url('img/cello_scroll.png')top left no-repeat;
 }
@@ -237,8 +237,10 @@ z-index: 1;
 
 #layer3 .work1 {
 width:33.3%;
+margin-right:2%;
+margin-left:12%;
 height: 875px;
-background: url('img/cello.png') top right no-repeat;
+background: url('img/cello.png') center no-repeat;
 }
 
 
@@ -264,7 +266,7 @@ h2 {
 #Jeremy{
 	text-align: center;
 	font-size: 16px;
-	color: #999;
+	color: black;
 	font-family: 'Garamond',sans-serif;
 	padding-left:34%;
 	padding-right:34%;
