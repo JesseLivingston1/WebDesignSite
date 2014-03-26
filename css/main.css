@@ -157,14 +157,25 @@ h1 img{
 	
 }
 
+.header-text {
+z-index:10;
+position:absolute;
+float:left;
+}
 
+.header-img {
 
-header {
-z-index: 3;
+z-index:5;
+position:absolute;
+float:left;
+}
+
+header{
+z-index:4;
 position: fixed;
-text-align: center;
 min-width: 100%;
 height: 212px;
+background:url('img/header-text.png') top center no-repeat;
 }
 
 	
@@ -198,22 +209,22 @@ z-index: 4;
 #layer1 .work1 {
 float: left;
 width: 11.11%;
-margin-top:.5%;
+margin-top: .2%;
 height: 875px;
-background: url('img/cello_scroll.png') top left no-repeat;
-
+background:url('img/cello_scroll.png')top left no-repeat;
 }
+
 
 #layer2 {
 width: 600%;
-z-index: 2;
+z-index: 3;
 }
 
 #layer2 .work1{
 float: left;
 width: 16.66%;
 height: 875px;
-background: url('img/work1A.png') center 203px no-repeat;
+background: url('img/work1.png') center 203px no-repeat;
 }
 
 
@@ -225,12 +236,10 @@ z-index: 1;
 
 
 #layer3 .work1 {
-margin-top:4%;
 width:33.3%;
 height: 875px;
-background: url('img/boathouse-row1.png') top center no-repeat;
+background: url('img/cello.png') top right no-repeat;
 }
-
 
 
 #hero h2 {
