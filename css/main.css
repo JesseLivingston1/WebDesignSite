@@ -205,19 +205,6 @@ background:url('img/cello_scroll.png')top left no-repeat;
 }
 
 
-#layer2 {
-width: 600%;
-z-index: 3;
-}
-
-#layer2 .work1{
-float: left;
-width: 16.66%;
-height: 875px;
-background: url('img/work1.png') center 203px no-repeat;
-}
-
-
 #layer3 {
 width: 300%;
 z-index: 1;
@@ -233,6 +220,35 @@ height: 875px;
 background: url('img/cello.png') center no-repeat;
 }
 
+
+#layer2 {
+width: 600%;
+z-index: 3;
+}
+
+#layer2 .work1{
+float: left;
+width: 16.66%;
+height: 875px;
+background: url('img/work1.png') center 203px no-repeat;
+}
+
+
+#layer2 .work2 {
+    float: left;
+    width: 16.66%;
+    height: 875px;
+    background: url('img/work2.png') center no-repeat;
+}
+
+
+#layer2 .work3 {
+    float: left;
+    width: 16.66%;
+    height: 875px;
+    background: url('img/work3.png') center no-repeat;
+
+}
 /* ==========================================================================
    Description styles
    ========================================================================== */
