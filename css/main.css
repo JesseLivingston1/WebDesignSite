@@ -93,14 +93,27 @@ textarea {
     padding: 0.2em 0;
 }
 
+@font-face {
+    font-family: 'Junction';
+    src: url('web_fonts/junctionregular/Junction-webfont.eot');
+    src: url('web_fonts/junctionregular/Junction-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web_fonts/junctionregular/Junction-webfont.woff') format('woff'),
+         url('web_fonts/junctionregular/Junction-webfont.ttf') format('truetype'),
+         url('web_fonts/junctionregular/Junction-webfont.svg#junction_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
 body {
-background: url("img/bgd.png") top center no-repeat;
-height: 1380px;
+background: url("img/bgd2.png") top center no-repeat;
+height: 1200px;
 
 }
 
@@ -127,13 +140,17 @@ margin: -73px 0 0 -73px;
 
 h1 {
     display:inline;
+    font-family: 'Baumans', sans-serif;
 
 }
 
-#header {
+header {
     height:90px;
-    padding-left:20px;
+    width:100%;
+    text-align:center;
     background-image:url('img/header_bg2.png');
+    position: absolute;
+    z-index: 2;
 }
 
 
@@ -144,10 +161,14 @@ h1 {
 
 
 #hero {
-height: 775px;
+height: 1000px;
 position: relative;
     }
 
+#hero .browse.disabled {
+background-position: 0 0;
+cursor: default;
+}
 	
 #hero .browse {
 cursor: pointer;
@@ -175,14 +196,7 @@ background-position: -44px -180px;
 background-position: 0 -180px;
     }
 
-#hero h2 {
-color: #000;
-font-weight: normal;
-font-size: 30px;
-text-align: center;
-margin: 0 auto;
-float:left;
-    }
+
 
 /* ==========================================================================
    Layer styles
@@ -193,31 +207,6 @@ position: absolute;
 width: 900%;
 height: 875px;
 z-index: 4;
--webkit-perspective: 1000;
-}
-
-#layer1 .work1 {
-float: left;
-width: 11.11%;
-margin-top: .8%;
-height: 875px;
-background:url('img/cello_scroll.png')top left no-repeat;
-}
-
-
-#layer3 {
-width: 300%;
-z-index: 1;
-}
-
-
-
-#layer3 .work1 {
-width:33.3%;
-margin-right:2%;
-margin-left:12%;
-height: 875px;
-background: url('img/cello.png') center no-repeat;
 }
 
 
@@ -226,19 +215,44 @@ width: 600%;
 z-index: 3;
 }
 
+
+#layer3 {
+width: 300%;
+z-index: 1;
+}
+
+#layer1 .work1 {
+float: left;
+width: 11.11%;
+margin-top: .2%;
+height: 875px;
+background:url('img/cello_scroll.png')top left no-repeat;
+}
+
+
 #layer2 .work1{
 float: left;
 width: 16.66%;
 height: 875px;
-background: url('img/work1.png') center 203px no-repeat;
+margin-top:125px;
+background: url('img/work1.png') top no-repeat;
+}
+
+#layer3 .work1 {
+width:33.3%;
+margin-right:2%;
+margin-left:12%;
+height: 875px;
+background: url('img/cello.png') top no-repeat;
 }
 
 
 #layer2 .work2 {
     float: left;
-    width: 16.66%;
+    width: 50%;
     height: 875px;
-    background: url('img/work2.png') center no-repeat;
+    margin-top:125px;
+    background: url('img/work2.png') top no-repeat;
 }
 
 
@@ -246,7 +260,8 @@ background: url('img/work1.png') center 203px no-repeat;
     float: left;
     width: 16.66%;
     height: 875px;
-    background: url('img/work3.png') center no-repeat;
+    margin-top:125px;
+    background: url('img/work3.png') top no-repeat;
 
 }
 /* ==========================================================================
@@ -254,88 +269,75 @@ background: url('img/work1.png') center 203px no-repeat;
    ========================================================================== */
 
 
-h2 {
-	font-family: 'Josefin Slab', sans-serif;
-	font-weight:700;
-	font-size:25px;
-	text-align:center;
-	
-	
-	}
-	
-#Jeremy{
-	text-align: center;
-	font-size: 16px;
-	color: black;
-	font-family: 'Garamond',sans-serif;
-	padding-left:34%;
-	padding-right:34%;
-	margin: 14px 0 14px 0;
-}
 
-.inner {
-width: 888px;
-margin: 0 auto;
-position: relative;
+#hero h2 {
+    font-family: 'Junction', sans-serif;
+ color: #000;
+font-weight: normal;
+font-size: 30px;
 text-align: center;
-font-family: 'Josefin Slab', sans-serif;
-font-weight:400;
-font-size: 23px;
-padding-bottom:10px;
-padding-top:100px;
+margin: 0 auto;
+
+    }
+ 
+    
+p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Junction', sans-serif;
+  
 }
 
-.email {
-	font-family: sans-serif;
-	text-transform:uppercase;
-	color:black;
-	text-align:center;
-	font-size:11px;
-	}
-	
-a:link {
-	text-decoration:none;
-	color: black;
-	font-family: 'Josefin Slab', sans-serif;
-	font-weight:400;
-	
-	}
-
-/* ==========================================================================
-   Footers styles
-   ========================================================================== */
-
-#Contact {
-float:right;
-padding-right:36.5%;
-padding-top: .3%;
-color: white;
-font-family: Josephin-slab;
-font-weight: 700;
-color:transparent;
-font-size:15px;
-}
-
-footer {
-margin-top:15%;
-font-size: 13px;
-text-transform: uppercase;
-font-family: 'Josefin Slab', sans-serif;
-font-weight:400;
-color: #4d4d4d;
-height: 50px;
-text-align:center;
-}
 
 #hero .desc {
 position: absolute;
-top: 678px;
+top: 650px;
 left: 50%;
 width: 560px;
 margin-left: -280px;
 z-index: 6;
 }
 
+
+
+
+/* ==========================================================================
+   Footers styles
+   ========================================================================== */
+
+
+.inner {
+
+font-family: 'Junction', sans-serif;
+font-size: 23px;
+padding-top:100px;
+color:white;
+}
+
+
+footer {
+font-family: 'Junction', sans-serif;
+color: #4d4d4d;
+text-align:center;
+}
+
+
+
+.email {
+    font-family: 'Junction', sans-serif;
+    text-transform:uppercase;
+    color:white;
+    text-align:center;
+    font-size:15px;
+    }
+    
+a:link {
+    text-decoration:none;
+    color: white;
+    font-family: 'Junction', sans-serif;
+    font-weight:400;
+    
+    }
 
 
 
