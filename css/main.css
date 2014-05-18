@@ -121,79 +121,32 @@ left: 50%;
 margin: -73px 0 0 -73px;
 }
 
-#nav {
-position: fixed;
-left: 0;
-top: 0;
-font-size: 13px;
-text-transform: uppercase;
-height: 32px;
-width: 100%;
-z-index: 7;
-color: #808080;
-padding-top:7%;
+/* ==========================================================================
+  Header/nav  styles
+   ========================================================================== */
+
+h1 {
+    display:inline;
 
 }
 
-#About-Me {
-float: left;
-padding-left: 39.5%;
-padding-top: .3%;
-color: white;
-font-family: Josephin-slab;
-font-weight: 700;
-color:#5C0000;
-font-size:15px;
+#header {
+    height:90px;
+    padding-left:20px;
+    background-image:url('img/header_bg2.png');
 }
 
-#Contact {
-float:right;
-padding-right:36.5%;
-padding-top: .3%;
-color: white;
-font-family: Josephin-slab;
-font-weight: 700;
-color:transparent;
-font-size:15px;
-}
+
+    
+/* ==========================================================================
+   Hero styles
+   ========================================================================== */
+
 
 #hero {
 height: 775px;
 position: relative;
-}
-
-h1 {
-	margin:0;
-	padding: 0;
-	
-}
-
-h1 img{
-	min-width:100%;
-	max-width:100%;
-	
-}
-
-.header-text {
-z-index:10;
-position:absolute;
-float:left;
-}
-
-.header-img {
-
-z-index:5;
-position:absolute;
-float:left;
-}
-
-header{
-z-index:4;
-position: fixed;
-min-width: 100%;
-height: 212px;
-
-}
+    }
 
 	
 #hero .browse {
@@ -206,14 +159,34 @@ height: 90px;
 display: block;
 z-index: 5;
 background: url('img/hero_nav.png') no-repeat 0 -90px;
-	
 	}
 
 #hero .browse.next {
 left: auto;
 right: 0;
 background-position: -44px -90px;
-}
+    }
+
+#hero .browse.next:hover {
+background-position: -44px -180px;
+    }
+
+#hero .browse:hover {
+background-position: 0 -180px;
+    }
+
+#hero h2 {
+color: #000;
+font-weight: normal;
+font-size: 30px;
+text-align: center;
+margin: 0 auto;
+float:left;
+    }
+
+/* ==========================================================================
+   Layer styles
+   ========================================================================== */
 
 #layer1, #layer2, #layer3{
 position: absolute;
@@ -260,16 +233,10 @@ height: 875px;
 background: url('img/cello.png') center no-repeat;
 }
 
+/* ==========================================================================
+   Description styles
+   ========================================================================== */
 
-#hero h2 {
-color: #000;
-font-weight: normal;
-font-size: 30px;
-text-align: center;
-margin: 0 auto;
-float:left;
-
-}
 
 h2 {
 	font-family: 'Josefin Slab', sans-serif;
@@ -318,6 +285,21 @@ a:link {
 	
 	}
 
+/* ==========================================================================
+   Footers styles
+   ========================================================================== */
+
+#Contact {
+float:right;
+padding-right:36.5%;
+padding-top: .3%;
+color: white;
+font-family: Josephin-slab;
+font-weight: 700;
+color:transparent;
+font-size:15px;
+}
+
 footer {
 margin-top:15%;
 font-size: 13px;
@@ -340,14 +322,7 @@ z-index: 6;
 
 
 
-#hero .browse.next:hover {
-background-position: -44px -180px;
-}
 
-#hero .browse:hover {
-background-position: 0 -180px;
-
-}
 
 
 /* ==========================================================================
