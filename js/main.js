@@ -46,14 +46,14 @@ $(document).ready(function(){
 	//hero nav
 	$('#hero .nav li:not(.active)').live('click', function(){
 		i = $(this).index();
-		move(1500);
+		move(2000);
 	});
 
 	//hero prev
 	$('#hero .prev').click(function(){
 		if (i > 0) {
 			i--;
-			move(1500);
+			move(2000);
 			$('#hero .next').removeClass('disabled');
 		}
 		if (i == 0){

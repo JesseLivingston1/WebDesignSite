@@ -114,7 +114,8 @@ textarea {
 body {
 background: url("img/bgd2.png") top center no-repeat;
 height: 1200px;
-
+overflow-y: scroll;
+overflow-x: hidden;
 }
 
 #loading {
@@ -213,6 +214,7 @@ z-index: 4;
 #layer2 {
 width: 600%;
 z-index: 3;
+
 }
 
 
@@ -221,49 +223,91 @@ width: 300%;
 z-index: 1;
 }
 
+
+
 #layer1 .work1 {
 float: left;
 width: 11.11%;
-margin-top: .2%;
+margin-right:22.22%;
+margin-top:.5%;
 height: 875px;
-background:url('img/cello_scroll.png')top left no-repeat;
+background:url("img/cello_scroll.png")top left no-repeat;
+}
+
+#layer1 .work2 {
+background:url('img/wine_barrel.png') center left no-repeat;
+float: left;
+width: 11.11%;
+margin-right:20.22%;
+margin-top:1%;
+margin-left: 2%;
+height: 875px;
+z-index: 6;
+}
+
+#layer1 .work3 {
+float: left;
+width: 11.11%;
+margin-right:22.22%;
+
+height: 875px;
 }
 
 
 #layer2 .work1{
 float: left;
 width: 16.66%;
+margin-right: 16.66%;
+margin-top:1.5%;
 height: 875px;
-margin-top:125px;
 background: url('img/work1.png') top no-repeat;
 }
 
-#layer3 .work1 {
-width:33.3%;
-margin-right:2%;
-margin-left:12%;
-height: 875px;
-background: url('img/cello.png') top no-repeat;
-}
-
-
 #layer2 .work2 {
-    float: left;
-    width: 50%;
-    height: 875px;
-    margin-top:125px;
-    background: url('img/work2.png') top no-repeat;
+float: left;
+width: 16.66%;
+margin-right: 16.66%;
+margin-top:1.5%;
+height: 875px;
+background: url('img/work2.png') top no-repeat;
 }
-
 
 #layer2 .work3 {
-    float: left;
-    width: 16.66%;
-    height: 875px;
-    margin-top:125px;
-    background: url('img/work3.png') top no-repeat;
+float: left;
+width: 16.66%;
+margin-right: 16.66%;
+margin-top:1.2%;
+height: 875px;
+background: url('img/work3.png') top no-repeat;
 
 }
+
+#layer3 .work1 {
+float:left;
+width:11.3%;
+margin-left: 22%;
+height: 875px;
+background: url('img/cello.png') center top no-repeat;
+}
+
+#layer3 .work2 {
+float:left;
+width:33.3%;
+height: 875px;
+background: url('img/vine.png')top right no-repeat;
+}
+
+#layer3 .work3 {
+float:left;
+width:33.3%;
+height: 875px;
+}
+
+
+
+
+
+
 /* ==========================================================================
    Description styles
    ========================================================================== */
