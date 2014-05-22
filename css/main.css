@@ -160,11 +160,17 @@ h1 {
 
 }
 
+#logo {
+ width:160px;
+ margin-top:15px;
+}
+
+
 header {
     height:85px;
     width:100%;
     text-align:center;
-    background-image:url('img/header_bg2.png');
+    background-image:url('');
     position: absolute;
     z-index: 2;
 }
@@ -225,19 +231,16 @@ height: 875px;
 z-index: 4;
 }
 
-
 #layer2 {
 width: 600%;
 z-index: 3;
 
 }
 
-
 #layer3 {
 width: 300%;
 z-index: 1;
 }
-
 
 
 #layer1 .work1 {
@@ -271,32 +274,28 @@ height: 875px;
 z-index: 6;
 }
 
-
 #layer2 .work1{
 float: left;
 width: 16.66%;
 margin-right: 16.66%;
-margin-top:1.5%;
 height: 875px;
-background: url('img/work1.png') top no-repeat;
+background: url('img/work1.png') center 160px no-repeat;
 }
 
 #layer2 .work2 {
 float: left;
 width: 16.66%;
 margin-right: 16.66%;
-margin-top:1.5%;
 height: 875px;
-background: url('img/work2.png') top no-repeat;
+background: url('img/work2.png') center 160px no-repeat;
 }
 
 #layer2 .work3 {
 float: left;
 width: 16.66%;
 margin-right: 16.66%;
-margin-top:1.2%;
 height: 875px;
-background: url('img/work3.png') top no-repeat;
+background: url('img/work3.png') center 140px no-repeat;
 
 }
 
@@ -326,9 +325,27 @@ margin-left: 20%;
 
 
 
+#work .workFull {
+position: fixed;
+display: none;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 7;
+background-color: black;
+}
 
-
-
+#work .workFull .close {
+    display:block; 
+    width:83px; 
+    height:82px; 
+    position:fixed; 
+    top:20px; 
+    left:50%; 
+    margin-left:479px; 
+    cursor:pointer; 
+}
 
 /* ==========================================================================
    Description styles

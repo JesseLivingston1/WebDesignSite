@@ -81,7 +81,7 @@ $(document).ready(function(){
 		if ($('#'+$name).length > 0) {
 			var $piece = $('#'+$name);
 		} else {
-			var $piece = $('<div class="workBig" id="'+$name+'"><div class="inner"></div></div>');
+			var $piece = $('<div class="workFull" id="'+$name+'"><div class="inner"></div></div>');
 
 			$piece.appendTo('#work');
 			$piece.find('.inner').load('work/'+$name+'.html', function(){
