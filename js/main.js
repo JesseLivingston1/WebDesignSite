@@ -73,28 +73,17 @@ $(document).ready(function(){
 		}
 	});
 
-	//work modal initiation
-	$('#workThumbs li:not(.disabled)), #hero .desc a:first-child').live('click', function(){
-		var $this = $(this),
-			$name = $this.attr('class').split(" ")[1];
+	//workFull toggle
 
-		if ($('#'+$name).length > 0) {
-			var $piece = $('#'+$name);
-		} else {
-			var $piece = $('<div class="workFull" id="'+$name+'"><div class="inner"></div></div>');
+		$('.descworkFull').click(function() {
+			$('.workFull').fadeIn("slow");
+		});
 
-			$piece.appendTo('#work');
-			$piece.find('.inner').load('work/'+$name+'.html', function(){
-				Cufon.set('fontFamily', 'Univers39').replace('h2');
-				Cufon.set('fontFamily', 'Univers59').replace('.desc .work, header, nav, #nav, .intro, #workNav li, h3, .phone, .email, footer', {hover: true});
-			});
-		}
+		$('.close').click(function() {
+			$('.workFull').fadeOut("slow");
+		});
 
-		$piece.fadeIn(500, function(){
-			$piece.css('overflow-y', 'scroll');
-			$('html').css('overflow-y', 'hidden');
-		});	
-	});
+
 
 
 
@@ -103,3 +92,5 @@ $(document).ready(function(){
 $(window).load(function() {
 	 $('#loading').fadeOut(1000);
 });
+
+
