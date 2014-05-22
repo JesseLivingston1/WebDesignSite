@@ -49,7 +49,7 @@ $(document).ready(function(){
 		move(2000);
 	});
 
-	//hero prev
+	//hero section preview
 	$('#hero .prev').click(function(){
 		if (i > 0) {
 			i--;
@@ -61,7 +61,7 @@ $(document).ready(function(){
 		}
 	});
 
-	//hero next
+	//hero section next
 	$('#hero .next').click(function(){
 		if (i < 2) {
 			i++;
@@ -73,28 +73,7 @@ $(document).ready(function(){
 		}
 	});
 
-	//work nav
-	$('#workNav li:not(.active)').live('click', function(){
-		var area = $(this).attr('class').split(" ")[0];
-		$(this).addClass('active')
-			.siblings().removeClass('active');
-		if (area == "all") {
-			$('#workThumbs li').removeClass('disabled').animate({
-				'opacity': 1
-			}, 250);
-		} else {
-			$('#workThumbs li.'+area).removeClass('disabled').animate({
-				'opacity': 1
-			}, 250);
-			$('#workThumbs li:not(.'+area+')').addClass('disabled').animate({
-				'opacity': 0.2
-			}, 250);
-		}
-		Cufon.refresh();
-		Cufon.set('fontFamily', 'Univers39').replace('h2');
-	});
-
-	//work modal init
+	//work modal initiation
 	$('#workThumbs li:not(.disabled)), #hero .desc a:first-child').live('click', function(){
 		var $this = $(this),
 			$name = $this.attr('class').split(" ")[1];

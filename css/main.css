@@ -105,6 +105,19 @@ textarea {
 
 }
 
+@font-face {
+    font-family: 'Fertigopro';
+    src: url('web_fonts/fertigopro/Fertigo_PRO-webfont.eot');
+    src: url('web_fonts/fertigopro/Fertigo_PRO-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web_fonts/fertigopro/Fertigo_PRO-webfont.woff') format('woff'),
+         url('web_fonts/fertigopro/Fertigo_PRO-webfont.ttf') format('truetype'),
+         url('web_fonts/fertigopro/Fertigo_PRO-webfont.svg#FertigoProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
 /* ==========================================================================
    Author's custom styles
@@ -141,12 +154,14 @@ margin: -73px 0 0 -73px;
 
 h1 {
     display:inline;
-    font-family: 'Baumans', sans-serif;
+    font-family: 'Fertigopro', sans-serif;
+    font-style:normal;
+    font-size: 22px;
 
 }
 
 header {
-    height:90px;
+    height:85px;
     width:100%;
     text-align:center;
     background-image:url('img/header_bg2.png');
@@ -229,7 +244,7 @@ z-index: 1;
 float: left;
 width: 11.11%;
 margin-right:22.22%;
-margin-top:.5%;
+margin-top:.3%;
 height: 875px;
 background:url("img/cello_scroll.png")top left no-repeat;
 }
@@ -246,11 +261,14 @@ z-index: 6;
 }
 
 #layer1 .work3 {
+background:url('img/globe.png') center left no-repeat;
 float: left;
 width: 11.11%;
-margin-right:22.22%;
-
+margin-right:20.22%;
+margin-top:1%;
+margin-left: 2%;
 height: 875px;
+z-index: 6;
 }
 
 
@@ -294,14 +312,18 @@ background: url('img/cello.png') center top no-repeat;
 float:left;
 width:33.3%;
 height: 875px;
-background: url('img/vine.png')top right no-repeat;
+background: url('img/vine2.png')top right no-repeat;
 }
 
 #layer3 .work3 {
-float:left;
-width:33.3%;
+float: left;
+width: 13%;
 height: 875px;
+background: url('img/logoconverge.png')top center no-repeat;
+margin-top: 1.2%;
+margin-left: 20%;
 }
+
 
 
 
