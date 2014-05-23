@@ -231,6 +231,7 @@ position: absolute;
 width: 900%;
 height: 875px;
 z-index: 4;
+top:0;
 }
 
 #layer2 {
@@ -260,9 +261,8 @@ z-index: 6;
 float: left;
 width: 11.11%;
 margin-right:22.22%;
-margin-top:.3%;
 height: 875px;
-background:url("img/cello_scroll.png")top left no-repeat;
+background:url("")top left no-repeat;
 }
 
 #layer1 .work3 {
@@ -291,7 +291,7 @@ float: left;
 width: 16.66%;
 margin-right: 16.66%;
 height: 875px;
-background: url('img/work1.png') center 160px no-repeat;
+background: url('img/work1.png') center 175px no-repeat;
 }
 
 #layer2 .work3 {
@@ -299,7 +299,7 @@ float: left;
 width: 16.66%;
 margin-right: 16.66%;
 height: 875px;
-background: url('img/work3.png') center 140px no-repeat;
+background: url('img/work3.png') center 145px no-repeat;
 
 }
 
@@ -337,8 +337,8 @@ margin-left: 20%;
 
 
 #hero h2 {
-    font-family: 'Junction', sans-serif;
- color: #000;
+font-family: 'Junction', sans-serif;
+color: #000;
 font-weight: normal;
 font-size: 30px;
 text-align: center;
@@ -355,16 +355,18 @@ p{
 
 #hero .desc {
 position: absolute;
-top: 650px;
+top: 670px;
 left: 50%;
 width: 560px;
 margin-left: -280px;
 z-index: 6;
 }
 
+
 a {
     cursor: pointer;
     text-align: center;
+
 }
 
 
@@ -389,6 +391,7 @@ background:url('img/close.png') no-repeat;
     display:none;
     z-index: 7;
     position:fixed;
+    top:0;
 }
 
 .inner {
@@ -403,16 +406,20 @@ background:url('img/close.png') no-repeat;
 }   
 
 h3 {
-    color:white;
-    font-family: 'Josefin Slab', sans-serif;
-    text-align: center;
-    margin-top:5%;
-    z-index:10;
+font-family: 'Junction', sans-serif;
+color: white;
+text-align: center;
+font-weight: normal;
+font-size: 30px;
+margin-top:5%;
+z-index:10;
 }
 
 #vintageFull p {
     color:white;
-    font-family: 'Josefin Slab', sans-serif;
+    font-family: 'Junction', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
     z-index:10;
 }
 
