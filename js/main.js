@@ -53,7 +53,7 @@ $(document).ready(function(){
 	$('#hero .prev').click(function(){
 		if (i > 0) {
 			i--;
-			move(2500);
+			move(2000);
 			$('#hero .next').removeClass('disabled');
 		}
 		if (i == 0){
@@ -65,7 +65,7 @@ $(document).ready(function(){
 	$('#hero .next').click(function(){
 		if (i < 2) {
 			i++;
-			move(2500);
+			move(2000);
 			$('#hero .prev').removeClass('disabled');
 		}
 		if (i == 2){
@@ -77,7 +77,6 @@ $(document).ready(function(){
 
 		$('#linkVintage').click(function() {
 			$('#vintageFull').fadeIn("slow");
-			$('#vintageFull').css('overflow-y', 'scroll');
 
 		});
 

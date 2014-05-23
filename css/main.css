@@ -126,7 +126,6 @@ textarea {
 
 body {
 background: url("img/bgd2.png") top center no-repeat;
-height: 1200px;
 overflow-y: scroll;
 overflow-x: hidden;
 margin:0;
@@ -159,13 +158,36 @@ h1 {
     font-family: 'Fertigopro', sans-serif;
     font-style:normal;
     font-size: 22px;
+}
 
+.container {
+width: 600px;
+height: 100px;
+margin: auto;
 }
 
 #logo {
  width:160px;
- margin-top:15px;
+ margin: 15px 60px 15px 60px;
 }
+
+#about, #contact{
+    display:inline-block;
+    z-index: 6;
+    position:absolute;
+    color:white;
+    font-family:'Fertigopro', sans-serif;
+    font-size: 16px;
+}
+
+#about {
+       margin: 80px 0 0 17px;
+}
+
+#contact {
+    margin: 80px 0 0 23px;
+}
+
 
 
 header {
@@ -185,7 +207,7 @@ header {
 
 
 #hero {
-height: 1000px;
+height: 900px;
 position: relative;
     }
 
@@ -376,7 +398,7 @@ a {
 display: block;
 width: 83px;
 height: 82px;
-position: fixed;
+position: absolute;
 top: 20px;
 left: 50%;
 margin-left: 479px;
@@ -387,12 +409,14 @@ background:url('img/close.png') no-repeat;
 #vintageFull, #jeremyFull, #convergeFull {
     background-color:#201f1f;
     width:100%;
-    height:1500px;
+    overflow-x:hidden;
     display:none;
     z-index: 7;
-    position:fixed;
+    position:absolute;
     top:0;
 }
+
+
 
 .inner {
     margin-left:20%;
@@ -402,7 +426,7 @@ background:url('img/close.png') no-repeat;
 .inner img {
     max-width:100%;
     min-width:100%;
-    margin-top:5%;
+    margin:5% 0 5% 0;
 }   
 
 h3 {
@@ -415,7 +439,7 @@ margin-top:5%;
 z-index:10;
 }
 
-#vintageFull p {
+.inner p {
     color:white;
     font-family: 'Junction', sans-serif;
     font-weight: normal;
@@ -437,41 +461,20 @@ z-index:10;
    Footers styles
    ========================================================================== */
 
-
-.innerfooter {
-
-font-family: 'Junction', sans-serif;
-font-size: 23px;
-padding-top:100px;
-color:white;
-}
-
-
 footer {
-font-family: 'Junction', sans-serif;
-color: #4d4d4d;
-text-align:center;
+    width:100%;
+    background-color: #201f1f;
+    height:100px;
+    box-shadow: inset -2px 16px 17px 0px rgba(0,0,0,0.45);
+    position:relative;
+    clear:both;
+
 }
 
-
-
-.email {
-    font-family: 'Junction', sans-serif;
-    text-transform:uppercase;
+footer p {
     color:white;
-    text-align:center;
-    font-size:15px;
-    }
-    
-a:link {
-    text-decoration:none;
-    color: white;
-    font-family: 'Junction', sans-serif;
-    font-weight:400;
-    
-    }
-
-
+    padding-top: 40px;
+}
 
 
 

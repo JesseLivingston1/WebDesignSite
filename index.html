@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montez" />
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -27,7 +25,16 @@
 
 
 		<header>
-			<img id="logo" src="img/logo.png"> 
+			<div class="container">
+				<div id="about">About Me</div>
+				<img src="img/bubble.png"/>
+					
+				<img id="logo" src="img/logo.png"/> 
+
+				<div id="contact">Contact</div>
+				<img src="img/bubble.png"/>
+
+			</div>
 		</header>
 				
 <!--hero section-->
@@ -61,7 +68,7 @@
 
 				<div class="desc" id="vintage">​
 					<h2> Vintage Wine & Market </h2>
-						<p>One-page promo for Los Angeles-based restaurant that specializes in local wines and craft beers.</p>
+						<p>Promo for Los Angeles-based restaurant that specializes in local wines and craft beers.</p>
 
 						<p>
 							<a id="linkVintage">Take a closer look
@@ -76,7 +83,7 @@
 					</p>
 					<div class="inner">
 						<h3>Vintage Wine & Market </h3>
-							<p>A simple, one-page promo for an upcoming Wine and Market based in Los-Angeles, CA. A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
+							<p>A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
 
 								<img src="img/vintagefull.jpg"/>
 					</div>	
@@ -86,8 +93,8 @@
 					<h2>JEREMY WARD | Violone & Violoncello </h2>
 						<p> Chicago-based cellist Jeremy David Ward is a performer, teacher, clinician, and historical performance expert.</p>
 						<p>
-							<a id="linkJeremy">Take a closer look</a>
-								<img src="img/arrow.png"/>
+							<a id="linkJeremy">Take a closer look
+								<img src="img/arrow.png"/></a>
 						<p>
 				</div>
 
@@ -98,16 +105,18 @@
 					</p>
 						<div class="inner">
 							<h3>Jeremy David Ward | Violone & Violincello </h3>
-								<p>A simple, one-page promo for an upcoming Wine and Market based in Los-Angeles, CA. A fully-responsive design allowing for instant mobile compatibility and symettrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
-						
+								<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
 
 						<img src="img/jeremyhome.jpg"/>
+						<img src="img/jeremybio.jpg"/>
+						<img src="img/jeremylinks.jpg"/>
+
 					</div>
 				</div>
 
 				<div class="desc" id="converge">​
 					<h2> Converge - contributor </h2>
-						<p> Featured by non-profit YWAM, Converge provides a platform for students to connect with internships globally. </p>
+						<p>Converge provides a platform for students to connect with internships globally. </p>
 
 						<p>
 							<a id="linkConverge">Take a closer look
@@ -119,6 +128,15 @@
 					<p>
 						<a id="convergeClose"></a>
 					</p>
+
+						<div class="inner">
+							<h3>Converge</h3>
+								<p> Featured by non-profit YWAM, "Converge" is a collaboration of many web developers world-wide using Ruby on Rails, HAML, SCSS, and CoffeeScript/JQuery. It aids in connecting students across the globe with internships in a wide range of study.</p>
+
+								<img src="img/ipo1.jpg"/>
+								<img src="img/ipo4.jpg"/>
+								<img src="img/ipo2.jpg"/>
+								<img src="img/ipo3.jpg"/>
 				</div>
 
 		</section>
@@ -127,12 +145,9 @@
 <!--footer section-->	
 
 <footer>
-	
-	<div class="innerfooter"> CONTACT </div>
-		<span class="email"><a href=<a href="mailto:celloward@gmail.com">JesseLivingston1@gmail.com</a>
-		
-		</span>
-	
+	<div class="container">
+		<p> Copyright Jesse Livingston | 2014 </p>
+	</div>
 </footer>
 		
 
