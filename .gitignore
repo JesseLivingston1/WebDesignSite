@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+=======
+*.cache
+>>>>>>> 2b0f36b7ccc99b3c52adcf7429e950226155119e
