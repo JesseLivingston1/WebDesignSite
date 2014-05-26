@@ -30,19 +30,16 @@
 
 
 
-		<header>
-			<div id="header-logo">L</div>
-				<div id="menu">
-					<div class="menu-item one" data-anchor="slide1">Work</div>
-					<div class="menu-item two" data-anchor="slide2">About</div>
-					<div class="menu-item three" data-anchor="slide3">Contact</div>
-				</div>
-
-		</header>
+	<ul id="menu">
+	    <li data-menuanchor="firstPage" class="logo"><a href="#landing">L</a></li>
+	    <li data-menuanchor="secondPage"class="menu-item one"><a href="#work">Work</a></li>
+	    <li data-menuanchor="thirdPage" class="menu-item two"><a href="#about">About</a></li>
+	    <li data-menuanchor="fourthPage"class="menu-item three"><a href="#contact">Contact</a></li>
+	</ul>
 
 <!--landing section-->
 
-	<div class="section">
+	<div class="section" id="landing">
 
 		<div class="content">
 			<h1>Jesse David Livingston</h1>
@@ -56,10 +53,14 @@
      
 	<div class="section" id="work">
 
-				<a><span class="browse prev"></span></a>
-				<a><span class="browse next"></span></a>
-			
-			<div class="slide" id="vintage-section">
+				<div id="shelf"> </div>
+				
+	<!--work section: vintage-->
+
+			<div class="slide" data-anchor="slide1" id="vintage-section">
+
+				<span class="toSlide" data-index="2">HEREWE GO</span>
+
 
 				<div class="col-2">
 					<img src="css/img/work2.png"/>
@@ -88,7 +89,11 @@
 
 			</div>​
 
-			<div class="slide" id="jeremy">
+	<!--Jeremy-->
+
+			<div class="slide" data-anchor="slide2" id="jeremy">
+
+				
 
 				<div class="col-2">
 					<img src="css/img/work1.png"/>
@@ -124,7 +129,11 @@
 
 			</div>​
 
-			<div class="slide" id="converge">
+	<!--Converge-->
+
+			<div class="slide" data-anchor="slide3" id="converge">
+				<a><span class="toSlide browse prev" data-index="2"></span></a>
+				<a><span class="toSlide browse next" data-index="1"></span></a>
 
 				<div class="col-2">
 					<img src="css/img/work2.png"/>
@@ -157,7 +166,7 @@
 					</div>​
 				</div>
 			</div>
-									<div id="shelf"> </div>
+									
 	</div>
 
 <!--about section-->	
@@ -189,14 +198,18 @@
 				</div>
 			</footer>
 		
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 
-		<script type="text/javascript" src= "vendors/jquery.slimscroll.min.js"></script>
-		<script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
-		<script src="js/vendors/jquery.easings.min.js"></script>   
 
-        <script src="js/vendor/jquery-1.9.1.js"></script>
-        <script src="js/vendor/jquery.tools.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		
+		<script type="text/javascript" src="js/vendor/jquery.easings.min.js"></script>   
+		<script type="text/javascript" src= "js/vendor/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		
+
+      
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
