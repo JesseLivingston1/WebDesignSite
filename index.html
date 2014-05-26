@@ -11,72 +11,61 @@
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montez" />
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 
 
-    <body>
-	
+ <body>
+
+	<div id="fullpage">
+
 		<div id="loading">
 			<img src="img/loading.gif"/>
 		</div>
 
 
 
-		<div id="header">
+		<header>
 			<div id="header-logo">L</div>
 				<div id="menu">
-					<div class="menu-item one" id="work">Work</div>
-					<div class="menu-item two" id="about">About</div>
-					<div class="menu-item three" id="contact">Contact</div>
+					<div class="menu-item one" data-anchor="slide1">Work</div>
+					<div class="menu-item two" data-anchor="slide2">About</div>
+					<div class="menu-item three" data-anchor="slide3">Contact</div>
 				</div>
 
-		</div>
+		</header>
 
 <!--landing section-->
 
-	<div id="landing">
+	<div class="section">
+
 		<div class="content">
 			<h1>Jesse David Livingston</h1>
 			<h2>Front End Developer & Conductor</h2>
 		</div>
+
 	</div>
 
 				
-<!--hero section-->
+<!--work section-->
      
-		<section id="hero">
+	<div class="section" id="work">
 
-			<a><span class="browse prev"></span></a>
-			<a><span class="browse next"></span></a>
+				<a><span class="browse prev"></span></a>
+				<a><span class="browse next"></span></a>
 			
-				<div id="layer1">​
-					<div class="work1">​</div>​
-					<div class="work2">​</div>​
-					<div class="work3">​</div>​
-				</div>​
-				
-				<div id="layer2">​
-					<div class="work1">
-						<img src="css/img/work2.png"/>
-					</div>​
-					<div class="work2">​</div>​
-					<div class="work3">​</div>​
-				</div>​
-				
-				<div id="layer3">​
-					<div class="work1">​</div>​
-					<div class="work2">​</div>​
-					<div class="work3">​</div>​
-				</div>​	
-					
-		
-<!--description and work display section-->
+			<div class="slide" id="vintage-section">
 
+				<div class="col-2">
+					<img src="css/img/work2.png"/>
+				</div>
 
-				<div class="desc" id="vintage">​
+				<div class="col-2" id="vintage">​
 					<h2> Vintage Wine & Market </h2>
 						<p>Promo for Los Angeles-based restaurant that specializes in local wines and craft beers.</p>
 						<a>
@@ -97,68 +86,113 @@
 					</div>	
 				</div>
 
-				<div class="desc" id="jeremy">​
-					<h2>JEREMY WARD | Violone & Violoncello </h2>
-						<p> Chicago-based cellist Jeremy David Ward is a performer, teacher, clinician, and historical performance expert.</p>
-						<a>
-							<span class="seemore" id="linkJeremy">See more</span>
-						</a>
+			</div>​
 
+			<div class="slide" id="jeremy">
+
+				<div class="col-2">
+					<img src="css/img/work1.png"/>
 				</div>
 
 
-				<div id="jeremyFull">
-					<p>
-						<a id="jeremyClose"></a>
-					</p>
-						<div class="inner">
-							<h3>Jeremy David Ward | Violone & Violincello </h3>
-								<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
+				<div class="col-2"> 
+					<div class="desc" id="jeremy">​
+						<h2>JEREMY WARD | Violone & Violoncello </h2>
+							<p> Chicago-based cellist Jeremy David Ward is a performer, teacher, clinician, and historical performance expert.</p>
+							<a>
+								<span class="seemore" id="linkJeremy">See more</span>
+							</a>
 
-						<img src="img/jeremyhome.jpg"/>
-						<img src="img/jeremybio.jpg"/>
-						<img src="img/jeremylinks.jpg"/>
+					</div>
 
+
+					<div id="jeremyFull">
+						<p>
+							<a id="jeremyClose"></a>
+						</p>
+							<div class="inner">
+								<h3>Jeremy David Ward | Violone & Violincello </h3>
+									<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
+
+							<img src="img/jeremyhome.jpg"/>
+							<img src="img/jeremybio.jpg"/>
+							<img src="img/jeremylinks.jpg"/>
+
+						</div>
 					</div>
 				</div>
 
-				<div class="desc" id="converge">​
-					<h2> Converge </h2>
-						<p>Converge provides a platform for students to connect with internships globally. </p>
-						<a>
-							<span class="seemore" id="linkConverge">See more</span>
-						</a>
-						
+			</div>​
+
+			<div class="slide" id="converge">
+
+				<div class="col-2">
+					<img src="css/img/work2.png"/>
 				</div>
 
-				<div id="convergeFull">
-					<p>
-						<a id="convergeClose"></a>
-					</p>
+				<div class="col-2">
+					<div class="desc" id="converge">​
+						<h2> Converge </h2>
+							<p>Converge provides a platform for students to connect with internships globally. </p>
+							<a>
+								<span class="seemore" id="linkConverge">See more</span>
+							</a>
+							
+					</div>
 
-						<div class="inner">
-							<h3>Converge</h3>
-								<p> Featured by non-profit YWAM, "Converge" is a collaboration of many web developers world-wide using Ruby on Rails, HAML, SCSS, and CoffeeScript/JQuery. It aids in connecting students across the globe with internships in a wide range of study.</p>
+					<div id="convergeFull">
+						<p>
+							<a id="convergeClose"></a>
+						</p>
 
-								<img src="img/ipo1.jpg"/>
-								<img src="img/ipo4.jpg"/>
-								<img src="img/ipo2.jpg"/>
-								<img src="img/ipo3.jpg"/>
+							<div class="inner">
+								<h3>Converge</h3>
+									<p> Featured by non-profit YWAM, "Converge" is a collaboration of many web developers world-wide using Ruby on Rails, HAML, SCSS, and CoffeeScript/JQuery. It aids in connecting students across the globe with internships in a wide range of study.</p>
+
+									<img src="img/ipo1.jpg"/>
+									<img src="img/ipo4.jpg"/>
+									<img src="img/ipo2.jpg"/>
+									<img src="img/ipo3.jpg"/>
+							</div>
+					</div>​
 				</div>
-
-
-		</section>
-
-		<div id="shelf"> </div>
-
-<!--footer section-->	
-
-<footer>
-	<div class="container">
-		<p></p>
+			</div>
+									<div id="shelf"> </div>
 	</div>
-</footer>
+
+<!--about section-->	
+
+			<div class="section" id="about">
+
+				<div class="slide">Slide 1</div>
+
+			</div>
+
+			<!--contact section-->	
+
+			<div class="section" id="contact">
+
+				<div class="slide">Slide 1</div>
+
+			</div>
+
+
+</div>
+
+
+
+			<!--footer-->	
+
+			<footer>
+				<div class="container">
+					<p></p>
+				</div>
+			</footer>
 		
+
+		<script type="text/javascript" src= "vendors/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="js/vendors/jquery.fullPage.js"></script>
+		<script src="js/vendors/jquery.easings.min.js"></script>   
 
         <script src="js/vendor/jquery-1.9.1.js"></script>
         <script src="js/vendor/jquery.tools.min.js"></script>

@@ -124,12 +124,6 @@ textarea {
    ========================================================================== */
 
 
-body {
-
-overflow-y: scroll;
-overflow-x: hidden;
-}
-
 #loading {
 position: fixed;
 top: 0;
@@ -151,18 +145,18 @@ margin: auto;
   Header  styles
    ========================================================================== */
 
-#header {
+header {
 position: fixed;
 left: 20px;
 top: 20px;
 z-index: 10;
 }
 
-#header #menu .menu-item:hover {
+header #menu .menu-item:hover {
     border-bottom:2px solid black;
 }
 
-#header #header-logo {
+header #header-logo {
 float: left;
 width: 50px;
 height: 50px;
@@ -172,12 +166,12 @@ line-height: 50px;
 font-size: 3em;
 }
 
-#header #menu {
+header #menu {
 float: left;
 margin-left: 20px;
 }
 
-#header #menu .menu-item{
+header #menu .menu-item{
 float: left;
 margin: 0 10px;
 text-transform: uppercase;
@@ -202,21 +196,21 @@ cursor: pointer;
 line-height: 50px;
 }
 
-#header #menu .menu-item.two {
+header #menu .menu-item.two {
 -webkit-transition: all .2s ease-out;
 -moz-transition: all .2s ease-out;
 -o-transition: all .2s ease-out;
 transition: all .2s ease-out;
 }
 
-#header #menu .menu-item.three {
+header #menu .menu-item.three {
 -webkit-transition: all .3s ease-out;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
 }
 
-#header:hover #menu .menu-item{
+header:hover #menu .menu-item{
     -moz-opacity:1;
     -khtml-opacity:1;
     -webkit-opacity:1;
@@ -234,11 +228,9 @@ transition: all .3s ease-out;
    ========================================================================== */
 
 #landing {
-    display: table;
     width:100%;
     overflow: hidden;
-
-
+    height:25%;
 }
 
 #landing .content {
@@ -254,19 +246,23 @@ padding: 0;
 font-weight: 400;
 font-size: 40px;
 letter-spacing: 2px;
+
 -webkit-transition: all .3s ease-out;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
+
 -webkit-transform: translate(0,0);
 -moz-transform: translate(0,0);
 -o-transform: translate(0,0);
 -ms-transform: translate(0,0);
 transform: translate(0,0);
+
 -moz-opacity: 1;
 -khtml-opacity: 1;
 -webkit-opacity: 1;
 opacity: 1;
+
 -ms-filter: alpha(opacity=100);
 filter: alpha(opacity=100);
 }
@@ -296,36 +292,93 @@ opacity: 1;
 -ms-filter: alpha(opacity=100);
 filter: alpha(opacity=100);
 }
+
+
+
+/* ==========================================================================
+   Big shit styles
+   ========================================================================== */
+
+
+body {
+height:400%;
+width:300%;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+section {
+    height:25%;
+    display:block;
+    position:relative;
+}
+
     
+/* ==========================================================================
+   Work styles
+   ========================================================================== */
+
+
+.col-2 {
+    width:50%;
+    float:left;
+}
+
+article {
+    width:33.3333%;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Hero styles
    ========================================================================== */
 
 
-#hero {
+/*#hero {
 height: 700px;
 position: relative;
 background: url("") center 700px no-repeat;
-    }
+    }*/
 
 /*#shelf {
     min-width: 100%;
     max-width: 100%;
 }*/
 
-#hero .browse.disabled {
+
+
+#work .browse {
 background-position: 0 0;
 cursor: default;
+display:block;
+top: 40%;
 }
 	
 .browse.prev {
 cursor: pointer;
 position: absolute;
 left: 0;
-top: 411px;
 width: 80px;
 height: 150px;
-display: block;
 z-index: 5;
 background: url('img/navarrowbeforeprev.png') no-repeat;
 
@@ -351,7 +404,6 @@ a:hover .browse.prev {
 cursor: pointer;
 position: absolute;
 left: 0;
-top: 411px;
 width: 92px;
 height: 150px;
 display: block;
@@ -375,10 +427,9 @@ left: auto;
 right: 0;
 cursor: pointer;
 position: absolute;
-top: 411px;
+
 width: 70px;
 height: 150px;
-display: block;
 z-index: 5;
 background: url('img/navarrowbefore.png') left center no-repeat;
   webkit-transition-duration: 0.3s;
@@ -405,7 +456,7 @@ left: auto;
 right: 0;
 cursor: pointer;
 position: absolute;
-top: 411px;
+
 width: 81px;
 height: 150px;
 display: block;
