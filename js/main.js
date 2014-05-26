@@ -77,29 +77,64 @@ $(document).ready(function(){
 
 		$('#linkVintage').click(function() {
 			$('#vintageFull').fadeIn("slow");
+			$('html').css('overflow', 'hidden');
+			
 
 		});
 
 		$('#vintageClose').click(function() {
 			$('#vintageFull').fadeOut("slow");
+			$('html').css('overflow', 'visible');
 		});
 
 		$('#linkJeremy').click(function() {
 			$('#jeremyFull').fadeIn("slow");
+			$('html').css('overflow', 'hidden');
 		});
 
 		$('#jeremyClose').click(function() {
 			$('#jeremyFull').fadeOut("slow");
+			$('html').css('overflow', 'visible');
 		});
 
 		$('#linkConverge').click(function() {
 			$('#convergeFull').fadeIn("slow");
+			$('html').css('overflow', 'hidden');
 		});
 
 		$('#convergeClose').click(function() {
 			$('#convergeFull').fadeOut("slow");
+			$('html').css('overflow', 'visible');
 		});
 
+//landing height//
+
+	$(function(){
+        var windowH = $(window).height();
+        var landingH = $('#landing').height();
+        if(windowH > landingH) {                            
+            $('#landing').css({'height':($(window).height())+'px'});
+    }   
+
+	});
+
+	//nav scroll//
+
+	$("#work").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#hero").offset().top});
+    });
+
+    //work full height//
+
+	$(function(){
+        var windowH = $(window).height();
+        var vintageH = $('#vintageFull, #jeremyFull, #convergeFull').height();
+        if(windowH > vintageH) {                            
+            $('#vintageFull, #jeremyFull, #convergeFull').css({'height':($(window).height())+'px'});
+    }   
+
+	});   
 
 });
 
