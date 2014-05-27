@@ -145,7 +145,7 @@ margin: auto;
   Header  styles
    ========================================================================== */
 
-#menu {
+#header {
 position: fixed;
 left: 20px;
 top: 20px;
@@ -153,19 +153,6 @@ z-index: 10;
 display:inline-block;
 }
 
-ul {
-    list-style:none;
-    padding-left:0;
-    display:inline-block;
-    color:black;
-}​
-
-a:-webkit-any-link {
-    list-style:none;
-    color:black;
-    text-decoration: none;
-    display:inline-block;
-}
 
 #menu #secondPage:hover {
     border-bottom:2px solid black;
