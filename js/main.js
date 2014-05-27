@@ -22,10 +22,10 @@ $(document).ready(function(){
 	//hero move function
 	function move(speed){
 		$('#layer1').stop().animate({
-			'left': i * winWidth * -3
+			'left': i * winWidth * -1
 		}, speed, "easeOutSine");
 		$('#layer2').stop().animate({
-			'left': i * winWidth * -2
+			'left': i * winWidth * -1
 		}, speed, "easeOutSine");
 		$('#layer3').stop().animate({
 			'left': i * winWidth * -1
@@ -53,7 +53,7 @@ $(document).ready(function(){
 	$('#hero .prev').click(function(){
 		if (i > 0) {
 			i--;
-			move(2000);
+			move(1000);
 			$('#hero .next').removeClass('disabled');
 		}
 		if (i == 0){
@@ -65,7 +65,7 @@ $(document).ready(function(){
 	$('#hero .next').click(function(){
 		if (i < 2) {
 			i++;
-			move(2000);
+			move(1000);
 			$('#hero .prev').removeClass('disabled');
 		}
 		if (i == 2){
@@ -78,8 +78,7 @@ $(document).ready(function(){
 		$('#linkVintage').click(function() {
 			$('#vintageFull').fadeIn("slow");
 			$('html').css('overflow', 'hidden');
-			
-
+	
 		});
 
 		$('#vintageClose').click(function() {
@@ -107,23 +106,114 @@ $(document).ready(function(){
 			$('html').css('overflow', 'visible');
 		});
 
-//landing height//
+
+
+//Section heights//
 
 	$(function(){
-        var windowH = $(window).height();
-        var landingH = $('#landing').height();
-        if(windowH > landingH) {                            
-            $('#landing').css({'height':($(window).height())+'px'});
-    }   
+        var heightwindow = $(window).height();
+        $('#landing, #hero, #layer1, .work1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+    });
 
-	});
+    $(window).resize(function() {
+    	var heightwindow = $(window).height();
+        $('#landing, #hero, #layer1, .work1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+    });
 
 	//nav scroll//
 
+	$("#header-logo").click(function() {
+        $('body').animate({
+            scrollTop: $("#landing").offset().top});
+       }); 
+
 	$("#work").click(function() {
-        $('html, body').animate({
+        $('body').animate({
             scrollTop: $("#hero").offset().top});
+        }); 
+
+	$("#about").click(function() {
+        $('body').animate({
+            scrollTop: $("#aboutSection").offset().top});
+        }); 
+
+	$("#contact").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#contactSection").offset().top});
+
+		}); 
+
+//window resize snap - not working//
+
+var STELLARJS = {
+init: function() {
+    var self = this;
+    $(function(){
+        self.$sections = $('#landing, #work, #about, #contact').each(function(index){
+            $(this).data('sectionIndex', index);
+        });
+
+        self.handleEvents();
+
     });
+},
+handleEvents: function() {
+    var self = this,
+        //Debounce function from Underscore.js
+        debounce = function(func, wait) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    func.apply(context, args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            }
+        },
+        handleScroll = function() {
+            var scrollTop = $(window).scrollTop(),
+                sectionIndex = Math.round((scrollTop) / self.$sections.first().outerHeight()),
+                $activeSection = self.$sections.eq(sectionIndex);
+
+            if ($activeSection.length === 0) {
+                $activeSection = self.$sections.last();
+            }
+
+            if ($activeSection.length === 0) return;
+
+            $(window).unbind('scroll.stellarsite');
+
+            if (scrollTop === 0) {
+                $(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 500));
+            } else {
+                $('html,body').animate({
+                    scrollTop: $activeSection.offset().top
+                }, 600, 'easeInOutExpo', function() {
+                    setTimeout(function(){
+                        $(window).unbind('scroll.stellarsite').bind('scroll.stellarsite', debounce(handleScroll, 500));
+                    }, 10);
+                });
+            }
+
+            $(window).bind('mousewheel', function(){
+                $('html,body').stop(true, true);
+            });
+
+            $(document).bind('keydown', function(e){
+                var key = e.which;
+
+                if (key === 37 || key === 39) {
+                    $('html,body').stop(true, true);
+                }
+            });
+        };
+
+    if (window.location.href.indexOf('#show-offset-parents-default') === -1) {
+        $(window).bind('scroll.stellarsite', debounce(handleScroll, 500));
+    }
+} }; 
 
     //work full height//
 

@@ -123,11 +123,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+h1 {
+  text-align: center;
+}
 
 body {
 
+height:400%;
 overflow-y: scroll;
 overflow-x: hidden;
+}
+
+section {
+  height:100%;
 }
 
 #loading {
@@ -254,19 +262,23 @@ padding: 0;
 font-weight: 400;
 font-size: 40px;
 letter-spacing: 2px;
+
 -webkit-transition: all .3s ease-out;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
+
 -webkit-transform: translate(0,0);
 -moz-transform: translate(0,0);
 -o-transform: translate(0,0);
 -ms-transform: translate(0,0);
 transform: translate(0,0);
+
 -moz-opacity: 1;
 -khtml-opacity: 1;
 -webkit-opacity: 1;
 opacity: 1;
+
 -ms-filter: alpha(opacity=100);
 filter: alpha(opacity=100);
 }
@@ -280,19 +292,23 @@ padding: 0;
 font-weight: 100;
 letter-spacing: 2px;
 text-transform: uppercase;
+
 -webkit-transition: all .3s ease-out;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
+
 -webkit-transform: translate(0,0);
 -moz-transform: translate(0,0);
 -o-transform: translate(0,0);
 -ms-transform: translate(0,0);
 transform: translate(0,0);
+
 -moz-opacity: 1;
 -khtml-opacity: 1;
 -webkit-opacity: 1;
 opacity: 1;
+
 -ms-filter: alpha(opacity=100);
 filter: alpha(opacity=100);
 }
@@ -303,15 +319,11 @@ filter: alpha(opacity=100);
 
 
 #hero {
-height: 700px;
+
 position: relative;
-background: url("") center 700px no-repeat;
+background: url("");
     }
 
-/*#shelf {
-    min-width: 100%;
-    max-width: 100%;
-}*/
 
 #hero .browse.disabled {
 background-position: 0 0;
@@ -428,7 +440,7 @@ opacity: 1;
 
 left: 0;
 right: 0;
-background: url('img/shelf.png') left bottom repeat-x;
+background: url('') left bottom repeat-x;
 display: block;
 height:75px;
 margin-top: -25px;
@@ -440,7 +452,30 @@ z-index: 200;
    Layer styles
    ========================================================================== */
 
-#layer1, #layer2, #layer3{
+#layer1 {
+  position:absolute;
+  width:300%;
+  z-index: 4;
+  top:0;
+}
+
+.work1, .work2, .work3{
+
+  float: left;
+  width: 33.33%;
+  overflow:hidden;
+ 
+}
+
+#layer1 img {
+
+  max-width: 100%;
+  position:relative;
+
+}
+
+
+/*#layer1,{
 position: absolute;
 width: 900%;
 height: 100%;
@@ -467,7 +502,6 @@ float: left;
 width: 11.11%;
 margin-right:22.22%;
 height: 100%;
-/*height: 875px;*/
 z-index: 6;
 }
 
@@ -476,7 +510,7 @@ float: left;
 width: 11.11%;
 margin-right:22.22%;
 height: 100%;
-/*height: 875px;*/
+
 background:url("")top left no-repeat;
 }
 
@@ -488,11 +522,11 @@ margin-right:20.22%;
 margin-top:1%;
 margin-left: 2%;
 height: 100%;
-/*height: 875px;*/
+
 z-index: 6;
 }
 
-#layer2 .work1{
+*#layer2 .work1{
 
 float: left;
 width: 16.66%;
@@ -516,7 +550,7 @@ float: left;
 width: 16.66%;
 margin-right: 16.66%;
 height: 875px;
-background: url('img/work1.png') left 315px no-repeat;
+
 }
 
 #layer2 .work3 {
@@ -552,8 +586,8 @@ height: 875px;
 background: url('img/logoconverge.png')top center no-repeat;
 margin-top: 1.2%;
 margin-left: 20%;
-}
-
+}*
+*/
 
 
 /* ==========================================================================
@@ -707,9 +741,8 @@ display: block;
 width: 83px;
 height: 82px;
 position: absolute;
-top: 20px;
-left: 50%;
-margin-left: 479px;
+top: 5%;
+margin-left: 80%;
 cursor: pointer;
 background:url('img/close.png') no-repeat;
 }
