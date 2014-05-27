@@ -120,7 +120,7 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   Big styles
    ========================================================================== */
 
 h1 {
@@ -130,13 +130,47 @@ h1 {
 body {
 
 height:400%;
-overflow-y: scroll;
+overflow-y: hidden;
 overflow-x: hidden;
 }
 
 section {
   height:100%;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+
+#layer1 {
+  position:absolute;
+  width:300%;
+  z-index: 4;
+  top:0;
+}
+
+.work1, .work2, .work3{
+
+  float: left;
+  width: 33.33%;
+  overflow:hidden;
+  bottom:0;
+ 
+}
+
+
+
+#layer1 img {
+
+  max-width: 100%;
+  min-width:100%;
+  position:relative;
+  bottom:0;
+  z-index:99999;
+
+}
+
 
 #loading {
 position: fixed;
@@ -374,10 +408,10 @@ background: url('img/navarrowafterprev.png') no-repeat;
 -moz-transition-duration: 0.4s;
 transition-duration: 0.4s;
 
--webkit-transform: translateX(-20px);
--moz-transform: translateX(-20px);
--ms-transform: translateX(-20px);
--o-transform: translateX(-20px);
+-webkit-transform: translateX(-10px);
+-moz-transform: translateX(-10px);
+-ms-transform: translateX(-10px);
+-o-transform: translateX(-10px);
 opacity: 1;
 }
 
@@ -388,7 +422,7 @@ right: 0;
 cursor: pointer;
 position: absolute;
 top: 411px;
-width: 70px;
+width: 30px;
 height: 150px;
 display: block;
 z-index: 5;
@@ -418,7 +452,7 @@ right: 0;
 cursor: pointer;
 position: absolute;
 top: 411px;
-width: 81px;
+width: 45px;
 height: 150px;
 display: block;
 z-index: 5;
@@ -428,10 +462,10 @@ background: url('img/navarrowafter.png') left center no-repeat;
 -moz-transition-duration: 0.4s;
 transition-duration: 0.4s;
 
--webkit-transform: translateX(20px);
--moz-transform: translateX(20px);
--ms-transform: translateX(20px);
--o-transform: translateX(20px);
+-webkit-transform: translateX(10px);
+-moz-transform: translateX(10px);
+-ms-transform: translateX(10px);
+-o-transform: translateX(10px);
 
 opacity: 1;
 }
@@ -440,10 +474,11 @@ opacity: 1;
 
 left: 0;
 right: 0;
-background: url('') left bottom repeat-x;
+background: url('img/shelf.png') bottom repeat-x;
 display: block;
-height:75px;
-margin-top: -25px;
+height:200px;
+bottom:0;
+position:absolute;
 z-index: 200;
 }
 
@@ -452,142 +487,6 @@ z-index: 200;
    Layer styles
    ========================================================================== */
 
-#layer1 {
-  position:absolute;
-  width:300%;
-  z-index: 4;
-  top:0;
-}
-
-.work1, .work2, .work3{
-
-  float: left;
-  width: 33.33%;
-  overflow:hidden;
- 
-}
-
-#layer1 img {
-
-  max-width: 100%;
-  position:relative;
-
-}
-
-
-/*#layer1,{
-position: absolute;
-width: 900%;
-height: 100%;
-z-index: 4;
-top:0;
-
-}
-
-#layer2 {
-width: 600%;
-z-index: 3;
-}
-
-#layer3 {
-width: 300%;
-z-index: 1;
-}
-
-
-#layer1 .work1 {
-
-background:url('') center left 300px top no-repeat;
-float: left;
-width: 11.11%;
-margin-right:22.22%;
-height: 100%;
-z-index: 6;
-}
-
-#layer1 .work2 {
-float: left;
-width: 11.11%;
-margin-right:22.22%;
-height: 100%;
-
-background:url("")top left no-repeat;
-}
-
-#layer1 .work3 {
-background:url('') center left no-repeat;
-float: left;
-width: 11.11%;
-margin-right:20.22%;
-margin-top:1%;
-margin-left: 2%;
-height: 100%;
-
-z-index: 6;
-}
-
-*#layer2 .work1{
-
-float: left;
-width: 16.66%;
-margin-right: 16.66%;
-height: 875px;
-background: url('') left 315px no-repeat;
-
-}
-
-#layer2 .work1 img {
-
-    min-width: 10%;
-    max-width: 10%;
-    position:absolute;
-    bottom:0;
-
-}
-
-#layer2 .work2 {
-float: left;
-width: 16.66%;
-margin-right: 16.66%;
-height: 875px;
-
-}
-
-#layer2 .work3 {
-float: left;
-width: 16.66%;
-margin-right: 16.66%;
-height: 875px;
-background: url('img/work3.png')left 315px no-repeat;
-
-}
-
-#layer3 .work1 {
-float:left;
-width:33.3%;
-height: 875px;
-background: url('img/vine2.png')top right no-repeat;
-}
-
-#layer3 .work2 {
-float:left;
-width:11.3%;
-margin-left: 22%;
-margin-top:20px;
-height: 875px;
-background: url('img/cello.png') bottom right no-repeat;
-
-}
-
-#layer3 .work3 {
-float: left;
-width: 13%;
-height: 875px;
-background: url('img/logoconverge.png')top center no-repeat;
-margin-top: 1.2%;
-margin-left: 20%;
-}*
-*/
 
 
 /* ==========================================================================
@@ -613,11 +512,7 @@ p{
 
 
 #hero .desc {
-position: absolute;
-top: 318px;
-left: 70%;
-width: 560px;
-margin-left: -280px;
+position: relative;
 z-index: 6;
 }
 
@@ -753,7 +648,7 @@ background:url('img/close.png') no-repeat;
     height:100%;
     overflow-x:hidden;
     display:none;
-    z-index: 7;
+    z-index: 999999;
     position:absolute;
     top:0;
 }

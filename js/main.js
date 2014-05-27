@@ -112,12 +112,12 @@ $(document).ready(function(){
 
 	$(function(){
         var heightwindow = $(window).height();
-        $('#landing, #hero, #layer1, .work1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+        $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
     });
 
     $(window).resize(function() {
     	var heightwindow = $(window).height();
-        $('#landing, #hero, #layer1, .work1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+        $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
     });
 
 	//nav scroll//
