@@ -149,7 +149,7 @@ var STELLARJS = {
 init: function() {
     var self = this;
     $(function(){
-        self.$sections = $('#landing, #work, #about, #contact').each(function(index){
+        self.$sections = $('#landing, #hero, #aboutSection, #contactSection').each(function(index){
             $(this).data('sectionIndex', index);
         });
 
