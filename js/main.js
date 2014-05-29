@@ -123,17 +123,17 @@ $(document).ready(function(){
 	//nav scroll//
 
 	$("#header-logo").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#landing").offset().top});
        }); 
 
 	$("#work").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#hero").offset().top});
         }); 
 
 	$("#about").click(function() {
-        $('body').animate({
+        $('html, body').animate({
             scrollTop: $("#aboutSection").offset().top});
         }); 
 

@@ -54,39 +54,45 @@
 			<a><span class="browse next"></span></a>
 			
 			<div id="layer1">
-
+				<img src="css/img/vine2.png" id="corner1"/>
 					<div class="work1">​
-					
-							<img src="css/img/work2.png"/>
-
+						<img src="css/img/work2.png"/>
 					</div>
-					
 
-			
-				<div class="work2">​
-
+					<div class="work2">​
 						<img src="css/img/work1.png"/>
+					</div>
 
-				</div>
-
-				
-				<div class="work3">​
-
-						<img src="css/img/work3.png"/>
-
-				</div>
+					<div class="work3">
+							<img src="css/img/work3.png"/>
+					</div>
 
 				<div id="shelf"></div>
-
 			</div>
+
+		
+	<div class="slide-navigation">
+		<a class="slide-nav-button prev-project inactive" href="#">
+			<i class="icon-arrow up">
+				<span class="line-up"></span>
+			</i>
+		</a>
+
+		<a class="slide-nav-button next-project" href="#">
+			<i class="icon-arrow down">
+				<span class="line-down"</span>
+			</i>
+		</a>
+	</div>
 
 				
 			
 		
-<!--description and work display section-->
+								<!--description and work display section-->
 	
 			
 
+<!--visible vintage-->
 
 						<div class="desc" id="vintage">
 					 			<h2> Vintage Wine & Market </h2>
@@ -97,7 +103,7 @@
 						</div>
 
 
-
+<!--hidden vintage-->
 
 
 				<div id="vintageFull">
@@ -105,14 +111,14 @@
 						<a id="vintageClose"></a>
 					</p>
 					<div class="inner">
-						<h3>Vintage Wine & Market </h3>
+						<h2>Vintage Wine & Market </h2>
 							<p>A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
 
 								<img src="img/vintagefull.jpg"/>
 					</div>	
 				</div>
 
-			
+<!--visible jeremy-->
 
 					<div class="desc" id="jeremy">
 						<h2>Jeremy David Ward </h2>
@@ -123,14 +129,14 @@
 
 					</div>
 
-
+<!--hidden jeremy-->
 
 				<div id="jeremyFull">
 					<p>
 						<a id="jeremyClose"></a>
 					</p>
 						<div class="inner">
-							<h3>Jeremy David Ward | Violone & Violincello </h3>
+							<h2>Jeremy David Ward | Violone & Violincello </h2>
 								<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
 
 						<img src="img/jeremyhome.jpg"/>
@@ -157,7 +163,7 @@
 					</p>
 
 						<div class="inner">
-							<h3>Converge</h3>
+							<h2>Converge</h2>
 								<p> Featured by non-profit YWAM, "Converge" is a collaboration of many web developers world-wide using Ruby on Rails, HAML, SCSS, and CoffeeScript/JQuery. It aids in connecting students across the globe with internships in a wide range of study.</p>
 
 								<img src="img/ipo1.jpg"/>
@@ -193,11 +199,28 @@
 </footer>
 		
 
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 	<script src="js/jquery.fittext.js"></script>
+ 	<script>
+        $("#responsive_headline").fitText();
+	</script>
+		<script type="text/javascript">
+			$("h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
+			$("h2").fitText(1.8, { minFontSize: '20px', maxFontSize: '30px' });
+			$("h3").fitText(1.2, { minFontSize: '20px', maxFontSize: '40px' });
+			$("p").fitText(1.5, { minFontSize: '11px', maxFontSize: '16px' });
+	</script>
+
+
+
         <script src="js/vendor/jquery-1.9.1.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/vendor/jquery.tools.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
