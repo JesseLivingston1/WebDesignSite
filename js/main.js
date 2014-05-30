@@ -50,26 +50,26 @@ $(document).ready(function(){
 	});
 
 	//hero section preview
-	$('#hero .prev').click(function(){
+	$('#hero #prev').click(function(){
 		if (i > 0) {
 			i--;
 			move(1000);
-			$('#hero .next').removeClass('disabled');
+			$('#hero #next').removeClass('disabled');
 		}
 		if (i == 0){
-			$('#hero .prev').addClass('disabled');
+			$('#hero #prev').addClass('disabled');
 		}
 	});
 
 	//hero section next
-	$('#hero .next').click(function(){
+	$('#hero #next').click(function(){
 		if (i < 2) {
 			i++;
 			move(1000);
-			$('#hero .prev').removeClass('disabled');
+			$('#hero #prev').removeClass('disabled');
 		}
 		if (i == 2){
-			$('#hero .next').addClass('disabled');
+			$('#hero #next').addClass('disabled');
 		}
 	});
 
@@ -122,17 +122,17 @@ $(document).ready(function(){
 
 	//nav scroll//
 
-	$("#header-logo").click(function() {
+	$("#header-logo, #upwork").click(function() {
         $('html, body').animate({
             scrollTop: $("#landing").offset().top});
        }); 
 
-	$("#work").click(function() {
+	$("#work, #downlanding").click(function() {
         $('html, body').animate({
             scrollTop: $("#hero").offset().top});
         }); 
 
-	$("#about").click(function() {
+	$("#about, #downwork").click(function() {
         $('html, body').animate({
             scrollTop: $("#aboutSection").offset().top});
         }); 
