@@ -285,7 +285,7 @@ transition: all .3s ease-out;
 
 }
 
-#landing .content {
+.content {
     display:table-cell;
     vertical-align: middle;
 }
