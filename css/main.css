@@ -965,6 +965,15 @@ text-align: center
  padding:3%;
 }
 
+/* ==========================================================================
+   contact styles
+   ========================================================================== */
+#contactarea {
+  display:block;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  width:100%;
+}
 
 /* ==========================================================================
    media queries
@@ -1026,7 +1035,7 @@ text-align: center
 #hero .desc {
   width:66.666%;
   margin-left:25%;
-  padding-top:7%;
+  padding-top:2%;
   position:absolute;
 
 }
@@ -1040,7 +1049,14 @@ text-align: center
   margin-right:5%;
 }
 
+#subabout1, #subabout2{
+  width:100%;
+}
 
+.container{
+  width:83.333%;
+  padding-top:10%;
+}
 
 }
 
@@ -1057,11 +1073,19 @@ text-align: center
 #hero .desc {
   width:80%;
   margin-left:20%;
-  padding-top:45%;
+  padding-top:30%;
 }
 
 #hero #layer1 #corner1, #corner2, #corner3{
   display:none;
+}
+.container{
+  width:100%;
+  padding-top:15%;
+}
+
+#subabout1, #subabout2{
+  width:100%;
 }
 
 
