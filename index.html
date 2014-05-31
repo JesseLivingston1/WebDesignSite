@@ -7,9 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montez" />
+
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -38,16 +36,14 @@
 
 <!--landing section-->
 
-	<div id="landing">
+	<section id="landing">
 		<div class="content">
 			<h1>Jesse David Livingston</h1>
 			<h2>Front End Developer & Conductor</h2>
 
-		</div>
-
 
 									<div class="slide-navigation">
-										<div class="slide-nav-container">
+										<div class="slide-nav-container landing">
 											<a id="downlanding" class="slide-nav-button next-project">
 												<i class="icon-arrow down">
 													<span></span>
@@ -55,40 +51,40 @@
 											</a>
 										</div>
 									</div>
-		
-	</div>
+		</div>
+	</section>
 
 				
 <!--work section-->
      
 		<section id="hero">
-
-<!-- 			<a><span class="browse prev"></span></a>
-			<a><span class="browse next"></span></a> -->
 			
 			<div id="layer1">
 				
-					<div class="work1">​
+				<div class="work1">​
+
 						<img src="css/img/work2.png"/>
 						<img src="css/img/vine2.png" id="corner1"/>
 					</div>
 
 					<div class="work2">​
 						<img src="css/img/work1.png"/>
+						<img src="css/img/corner2.png" id="corner2"/>
 					</div>
 
 					<div class="work3">
 							<img src="css/img/work3.png"/>
-					</div>
+							<img src="css/img/corner3.png" id="corner3"/>
+				</div>
 
-				<div id="shelf"></div>
-			</div>
+			<div id="shelf"></div>
+		</div>
 
 <!--slide nav-->
 
 
 									<div class="slide-navigation">
-										<div class="slide-nav-container work">
+											<div class="slide-nav-container work">
 
 											<a id="prev" class="slide-nav-button prev-project left">
 												<i class="icon-arrow left">
@@ -114,7 +110,8 @@
 												</i>
 											</a>
 										</div>
-									</div>
+
+								</div>
 
 				
 			
@@ -122,7 +119,6 @@
 								<!--description and hidden work display-->
 	
 			
-
 <!--visible vintage-->
 
 						<div class="desc" id="vintage">
@@ -132,6 +128,8 @@
 								<span class="seemore" id="linkVintage">See more</span>
 							</a>
 						</div>
+
+
 
 
 <!--hidden vintage-->
@@ -152,7 +150,7 @@
 <!--visible jeremy-->
 
 					<div class="desc" id="jeremy">
-						<h2>Jeremy David Ward </h2>
+						<h2>Jeremy David Ward | Cellist</h2>
 							<p> Chicago-based cellist Jeremy David Ward is a performer, teacher, clinician, and historical performance expert.</p>
 							<a>
 								<span class="seemore" id="linkJeremy">See more</span>
@@ -211,53 +209,94 @@
 
 <section id="aboutSection">
 	<div class="content">
-		<h1>About Me</h1>
+		<div class="container">
+			<h1>ABOUT ME</h1>
+				<div id="description">
+					<p>I'm a classically trained musician who found himself suddenly building websites - and loving it. Maybe it's my obessive personality, or my insatiable desire to solve problems. Who knows.</p>
+				</div>
 
-	</div>
+				<div id="subabout1">
+					<img src="css/img/dd.png"/>
+					<h2>Development & Design</h2>
+						<p>I enjoy both - functionality and beauty. I love writing front-end code and designing clean, vibrant websites. </p>
+				</div>
+
+				<div id="subabout2">
+
+					<h2>Conducting</h2>
+						<p>My entire life has been spent studying classical music, both at the Oberlin Conservatory and Ithaca College. My creative bent as a musician works hand in hand with my work as a web developer.</p>
+				</div>
+			</div>
+		</div>
+
+										<div class="slide-navigation">
+											<div class="slide-nav-container about">
+												<a class="slide-nav-button prev-project">
+													<i class="icon-arrow up">
+														<span></span>
+													</i>
+												</a>
+
+												<a class="slide-nav-button next-project">
+													<i class="icon-arrow down">
+														<span></span>
+													</i>
+												</a>
+											</div>
+										</div>
+
+		
+	
+</section>
+
+
+
+	
 
 
 									<div class="slide-navigation">
-										<div class="slide-nav-container">
-											<a class="slide-nav-button prev-project" href="#">
+										<div class="slide-nav-container about">
+											<a class="slide-nav-button prev-project">
 												<i class="icon-arrow up">
 													<span></span>
 												</i>
 											</a>
 
-											<a class="slide-nav-button next-project" href="#">
+											<a class="slide-nav-button next-project">
 												<i class="icon-arrow down">
 													<span></span>
 												</i>
 											</a>
 										</div>
 									</div>
-
+	</div>
 </section>
 
 
 <!--contact section-->	
 
 <section id="contactSection">
-	<h1>Contact</h1>
+	<div class="content">
+		<h1>Contact</h1>
 
 
 
-									<div class="slide-navigation">
-										<div class="slide-nav-container">
-											<a class="slide-nav-button prev-project" href="#">
+	<!-- 								<div class="slide-navigation">
+										<div class="slide-nav-container contact">
+											<a class="slide-nav-button prev-project">
 												<i class="icon-arrow up">
 													<span></span>
 												</i>
 											</a>
 
-											<a class="slide-nav-button next-project" href="#">
+											<a class="slide-nav-button next-project">
 												<i class="icon-arrow down">
 													<span></span>
 												</i>
 											</a>
 										</div>
-									</div>
-
+									</div> -->
+	</div>			
 </section>
 
 
@@ -278,9 +317,9 @@
 	</script>
 		<script type="text/javascript">
 			$("h1").fitText(1.3, { minFontSize: '20px', maxFontSize: '50px' });
-			$("h2").fitText(2, { minFontSize: '10px', maxFontSize: '25px' });
-			$("h3").fitText(1.2, { minFontSize: '10px', maxFontSize: '40px' });
-			$("p").fitText(1.5, { minFontSize: '11px', maxFontSize: '16px' });
+			
+			$("h3").fitText(2, { minFontSize: '10px', maxFontSize: '15px' });
+
 	</script>
 
 
