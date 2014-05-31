@@ -19,7 +19,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	//hero move function
+	//hero horizontal move function
 	function move(speed){
 		$('#layer1').stop().animate({
 			'left': i * winWidth * -1
@@ -43,13 +43,13 @@ $(document).ready(function(){
 		move(0);
 	});
 
-	//hero nav
+	//hero horizontal nav
 	$('#hero .nav li:not(.active)').live('click', function(){
 		i = $(this).index();
 		move(2000);
 	});
 
-	//hero section preview
+	//hero section prev
 	$('#hero #prev').click(function(){
 		if (i > 0) {
 			i--;
@@ -130,7 +130,7 @@ $(document).ready(function(){
         $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
     });
 
-	//nav scroll//
+	//nav vertical scroll//
 
 	$("#header-logo, #upwork").click(function() {
         $('html, body').animate({
