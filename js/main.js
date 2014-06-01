@@ -49,17 +49,12 @@ function toggle(openLink, closeLink, container) {
 		$('#layer1').stop().animate({
 			'left': i * winWidth * -1
 		}, speed, "easeOutSine");
-		$('#layer2').stop().animate({
-			'left': i * winWidth * -1
-		}, speed, "easeOutSine");
-		$('#layer3').stop().animate({
-			'left': i * winWidth * -1
-		}, speed, "easeOutSine");
+		
 		$('#hero .desc:visible').fadeOut(speed/2, function(){
 			$('#hero .desc:eq('+i+')').fadeIn(speed/2);
 		});
-		$('#hero .nav li:eq('+i+')').addClass('active')
-			.siblings().removeClass('active');
+		// $('#hero .nav li:eq('+i+')').addClass('active')
+		// 	.siblings().removeClass('active');
 	}
 	
 	//set hero position on window resize
