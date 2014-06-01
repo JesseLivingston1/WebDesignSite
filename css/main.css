@@ -972,12 +972,97 @@ text-align: center
 /* ==========================================================================
    contact styles
    ========================================================================== */
-#contactarea {
+form {
   display:block;
-  text-align: center;
   font-family: 'Lato', sans-serif;
   width:100%;
 }
+
+.container.contact{
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#contactp {
+  text-align: center;
+  margin-bottom:40px;
+  font-size: 25px;
+}
+
+#contactarea input{
+  width:50%;
+}
+
+#rightcontact {
+float: right;
+width: 45%;
+margin-left:5%;
+margin-bottom: 10%;
+}
+
+#leftcontact {
+float: left;
+width: 45%;
+margin-right:5%;
+}
+
+
+#send{
+  display:block;
+  margin-top:10%;
+  clear:both;
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: 1px solid black;
+color: black;
+background: 0 0;
+padding: 10px 20px;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+z-index: 0;
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;
+width: 120px;
+}
+
+#send:hover{
+  background-color: black;
+  color:white;
+}
+
+#contactSection h5{
+font-weight: 700;
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 3px;
+margin: 60px 0 20px 0;
+display:block;
+}
+
+#leftcontact input, #rightcontact textarea {
+background: 0 0;
+border: none;
+border-bottom: 1px solid black;
+width: 100%;
+padding: 20px;
+font-size: 20px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
 
 /* ==========================================================================
    media queries

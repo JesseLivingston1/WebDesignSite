@@ -53,8 +53,6 @@ function toggle(openLink, closeLink, container) {
 		$('#hero .desc:visible').fadeOut(speed/2, function(){
 			$('#hero .desc:eq('+i+')').fadeIn(speed/2);
 		});
-		// $('#hero .nav li:eq('+i+')').addClass('active')
-		// 	.siblings().removeClass('active');
 	}
 	
 	//set hero position on window resize
