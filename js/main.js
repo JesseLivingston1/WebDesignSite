@@ -1,6 +1,31 @@
 
 
-$(document).ready(function(){
+$(document).ready(function() {
+  //workFull invisible toggle
+  toggle('#linkVintage', '#vintageClose', '#vintageFull');
+  toggle('#linkJeremy', '#jeremyClose', '#jeremyFull');
+  toggle('#linkConverge','#convergeClose','#convergeFull');
+
+ 
+function hideGlobalOverflow() {
+  $('html').css('overflow', 'hidden');
+}
+ 
+function showGlobalOverflow() {
+  $('html').css('overflow', 'visible');
+}
+  
+function toggle(openLink, closeLink, container) {
+  $(openLink).click(function() {
+    $(container).show("slow");
+    hideGlobalOverflow();
+  });
+  $(closeLink).click(function() {
+    $(container).hide("slow");
+    showGlobalOverflow();
+  });
+}
+
 	//current hero
 	var i = 0,
 		winWidth = $('body').width();
@@ -73,38 +98,6 @@ $(document).ready(function(){
 		}
 	});
 
-	//workFull toggle
-
-		$('#linkVintage').click(function() {
-			$('#vintageFull').fadeIn("slow");
-			$('html').css('overflow', 'hidden');
-	
-		});
-
-		$('#vintageClose').click(function() {
-			$('#vintageFull').fadeOut("slow");
-			$('html').css('overflow', 'visible');
-		});
-
-		$('#linkJeremy').click(function() {
-			$('#jeremyFull').fadeIn("slow");
-			$('html').css('overflow', 'hidden');
-		});
-
-		$('#jeremyClose').click(function() {
-			$('#jeremyFull').fadeOut("slow");
-			$('html').css('overflow', 'visible');
-		});
-
-		$('#linkConverge').click(function() {
-			$('#convergeFull').fadeIn("slow");
-			$('html').css('overflow', 'hidden');
-		});
-
-		$('#convergeClose').click(function() {
-			$('#convergeFull').fadeOut("slow");
-			$('html').css('overflow', 'visible');
-		});
 		
     //work full height//
 
@@ -137,21 +130,22 @@ $(document).ready(function(){
             scrollTop: $("#landing").offset().top});
        }); 
 
-	$("#work, #downlanding").click(function() {
+	$("#work, #downlanding, #upabout").click(function() {
         $('html, body').animate({
             scrollTop: $("#hero").offset().top});
         }); 
 
-	$("#about, #downwork").click(function() {
+	$("#about, #downwork, #upcontact").click(function() {
         $('html, body').animate({
             scrollTop: $("#aboutSection").offset().top});
         }); 
 
-	$("#contact").click(function() {
+	$("#contact, #downabout").click(function() {
         $('html, body').animate({
             scrollTop: $("#contactSection").offset().top});
 
 		}); 
+
 
 //window resize snap - not working//
 
