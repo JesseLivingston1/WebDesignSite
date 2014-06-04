@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -136,9 +136,11 @@
 
 
 				<div id="vintageFull">
-					<p>
-						<a id="vintageClose"></a>
-					</p>
+						<div class="slide-navigation hidden">
+								<a id="vintageClose" class="slide-nav-button prev-project left">
+									<i class="icon-arrow left close"></i>
+								</a>
+						</div>
 					<div class="inner">
 						<h2>Vintage Wine & Market </h2>
 							<p>A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
@@ -161,9 +163,11 @@
 <!--hidden jeremy-->
 
 				<div id="jeremyFull">
-					<p>
-						<a id="jeremyClose"></a>
-					</p>
+						<div class="slide-navigation hidden">
+								<a id="jeremyClose" class="slide-nav-button prev-project left">
+									<i id="close" class="icon-arrow left"></i>
+								</a>
+						</div>
 						<div class="inner">
 							<h2>Jeremy David Ward | Violone & Violincello </h2>
 								<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
@@ -187,9 +191,12 @@
 
 
 				<div id="convergeFull">
-					<p>
-						<a id="convergeClose"></a>
-					</p>
+
+						<div class="slide-navigation hidden">
+								<a id="convergeClose" class="slide-nav-button prev-project left">
+									<i id="close" class="icon-arrow left"></i>
+								</a>
+						</div>
 
 						<div class="inner">
 							<h2>Converge</h2>
@@ -210,7 +217,7 @@
 <section id="aboutSection">
 	<div class="content">
 		<div class="container">
-			<h1>ABOUT ME</h1>
+			<h1>About Me</h1>
 				<div id="description">
 					<p>I'm a classically trained musician who found himself suddenly building websites - and loving it. Maybe it's my obessive personality, or my insatiable desire to solve problems. Who knows.</p>
 				</div>
@@ -292,15 +299,6 @@
 	
 	</div>			
 </section>
-
-
-<!--footer section-->	
-
-<footer>
-	<div class="container">
-		<p></p>
-	</div>
-</footer>
 		
 
 
@@ -311,8 +309,8 @@
 	</script>
 		<script type="text/javascript">
 			$("h1").fitText(1.3, { minFontSize: '20px', maxFontSize: '50px' });
-			
 			$("h3").fitText(2, { minFontSize: '10px', maxFontSize: '15px' });
+			$("h5").fitText(2, { minFontSize: '15px', maxFontSize: '25px' });
 
 	</script>
 
