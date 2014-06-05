@@ -17,11 +17,11 @@ function showGlobalOverflow() {
   
 function toggle(openLink, closeLink, container) {
   $(openLink).click(function() {
-    $(container).show("slow");
+    $(container).show("medium");
     hideGlobalOverflow();
   });
   $(closeLink).click(function() {
-    $(container).hide("slow");
+    $(container).hide("medium");
     showGlobalOverflow();
   });
 }
@@ -56,10 +56,10 @@ function toggle(openLink, closeLink, container) {
 	}
 
 
-	
+
 	//set hero position on window resize
 	$(window).resize(function(){
-		winWidth = $('body').width();
+		winWidth = $('body, html').width();
 		move(0);
 	});
 
@@ -94,50 +94,34 @@ function toggle(openLink, closeLink, container) {
 	});
 
 		
-    //work full height//
-
-	$(function(){
-        var windowH = $(window).height();
-        var vintageH = $('#vintageFull, #jeremyFull, #convergeFull').height();
-        if(windowH > vintageH) {                            
-            $('#vintageFull, #jeremyFull, #convergeFull').css({'height':($(window).height())+'px'});
-    }   
-
-	});   
 
 
-//Section heights//
+//resize section heights on load//
 
 	$(function(){
         var heightwindow = $(window).height();
         $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
     });
 
+//resize section heights on window resize//
+
     $(window).resize(function() {
     	var heightwindow = $(window).height();
         $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
     });
 
-    //scroll fix when window resize//
+        //work full height//
 
-(function() {
-    
-    var html = $('html');
-        H = html.outerHeight(true);
-        S = $(window).scrollTop();
-        P = S/H;
-    
-    $(window).scroll(function() {
-        S = $(window).scrollTop();
-        P = S/H;
-    });
-    
-    $(window).resize(function() {
-            H = html.outerHeight(true);
-            $(window).scrollTop(P*H);
-    });
+    $(function(){
+        var windowH = $(window).height();
+        var vintageH = $('#vintageFull, #jeremyFull, #convergeFull').height();
+        if(windowH > vintageH) {                            
+            $('#vintageFull, #jeremyFull, #convergeFull').css({'height':($(window).height())+'px'});
+    }   
 
-})();
+    });   
+
+
 
 	//nav vertical scroll//
 
