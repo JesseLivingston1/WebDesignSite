@@ -7,24 +7,28 @@ $(document).ready(function() {
   toggle('#linkConverge','#convergeClose','#convergeFull');
 
  
-function hideGlobalOverflow() {
-  $('html').css('overflow', 'hidden');
-}
+	function hideGlobalOverflow() {
+	  $('html').css('overflow', 'hidden');
+	};
  
-function showGlobalOverflow() {
-  $('html').css('overflow', 'visible');
-}
+	function showGlobalOverflow() {
+	  $('html').css('overflow', 'visible');
+	};
   
-function toggle(openLink, closeLink, container) {
-  $(openLink).click(function() {
-    $(container).show("medium");
-    hideGlobalOverflow();
-  });
-  $(closeLink).click(function() {
-    $(container).hide("medium");
-    showGlobalOverflow();
-  });
-}
+	function toggle(openLink, closeLink, container) {
+		  $(openLink).click(function() {
+		    $(container).show("medium");
+		    hideGlobalOverflow();
+		  });
+		  $(closeLink).click(function() {
+		    $(container).hide("medium");
+		    showGlobalOverflow();
+		  });
+	};
+
+		$('section').snapscroll();
+
+
 
 	//current hero
 	var i = 0,
@@ -100,14 +104,14 @@ function toggle(openLink, closeLink, container) {
 
 	$(function(){
         var heightwindow = $(window).height();
-        $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+        $('section, #layer1').css('height', heightwindow+'px');
     });
 
 //resize section heights on window resize//
 
     $(window).resize(function() {
     	var heightwindow = $(window).height();
-        $('#landing, #hero, #layer1, #aboutSection, #contactSection').css('height', heightwindow+'px');
+        $('section, #layer1').css('height', heightwindow+'px');
     });
 
         //work full height//
@@ -146,6 +150,10 @@ function toggle(openLink, closeLink, container) {
             scrollTop: $("#contactSection").offset().top});
 
 		}); 
+
+
+
+
 
 });
 
