@@ -390,6 +390,15 @@ padding: 30px 35px 30px 28px;
 
 }
 
+.slide-navigation.hid .slide-nav-button {
+float: left;
+display: inline-block;
+width: 15px;
+padding: 0;
+
+}
+
+
 
 
 .slide-nav-button .next-project {
@@ -1195,6 +1204,8 @@ margin-left: 5%;
 
 /*Smart Phones*/
 
+/*portrait view*/
+
 @media (min-device-width:320px) and (min-device-height: 480px){
     #layer1 img {
 
@@ -1296,6 +1307,7 @@ margin-left: 5%;
 
 
 }
+/*landscape view*/
 
 @media (min-device-width:480px) and (min-device-height: 320px){
 
@@ -1310,6 +1322,16 @@ margin-left: 5%;
 #hero .desc p{
   display:none;
 }
+
+
+#hero .inner h2{
+  font-size: 20px;
+}
+
+#hero .inner p{
+  font-size: 16px;
+}
+
 
 .slide-navigation{
   height:60px;
