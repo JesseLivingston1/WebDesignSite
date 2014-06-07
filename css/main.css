@@ -103,12 +103,15 @@ textarea {
 
 h1 {
   text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
 
 height:400%;
-overflow-y: scroll;
+overflow-y: hidden;
 overflow-x: hidden;
 }
 
@@ -393,9 +396,10 @@ padding: 30px 35px 30px 28px;
 }
 
 .slide-navigation.hid .slide-nav-button {
-float: left;
+float: right;
 display: inline-block;
-width: 15px;
+width: 50px;
+height:50px;
 padding: 0;
 
 }
@@ -503,7 +507,13 @@ backface-visibility: hidden;
 transition: all 0.3s;
 }
 
-
+.slide-navigaton.hid:hover{
+    -webkit-transform: translateX(-10px);
+-moz-transform: translateX(-10px);
+-ms-transform: translateX(-10px);
+-o-transform: translateX(-10px);
+transform: translateX(-10px);
+}
 
 
 .icon-arrow:after, .icon-arrow:before{
@@ -536,6 +546,20 @@ transform-origin: 19.5px 1.5px 0px;
 backface-visibility: hidden;
 }
 
+a:hover .icon-arrow.left.close:before{
+
+width: 20px;
+backface-visibility: hidden;
+
+
+  }
+
+a:hover .icon-arrow.left.close:after{
+
+width: 20px;
+backface-visibility: hidden;
+}
+
 .icon-arrow.left.close:after{
   position: absolute;
 display: block;
@@ -553,18 +577,6 @@ transform-origin: 19.5px 1.5px 0px;
 -o-transform-origin: 19.5px 1.5px 0px;
 backface-visibility: hidden;
 }
-
-#vintageClose, #jeremyClose, #convergeClose:hover {
-
-  backface-visibility: hidden;
-
-  -webkit-transform: translateX(0px);
--moz-transform: translateX(0px);
--ms-transform: translateX(0px);
--o-transform: translateX(0px);
-transform: translateX(0px);
-}
-
 
 
 .icon-arrow.right:before {
