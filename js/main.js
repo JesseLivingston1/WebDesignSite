@@ -17,18 +17,14 @@ $(document).ready(function() {
   
 	function toggle(openLink, closeLink, container) {
 		  $(openLink).click(function() {
-		    $(container).show("medium");
+		    $(container).fadeIn("medium");
 		    hideGlobalOverflow();
 		  });
 		  $(closeLink).click(function() {
-		    $(container).hide("medium");
+		    $(container).fadeOut("medium");
 		    showGlobalOverflow();
 		  });
 	};
-
-		$('section').snapscroll();
-
-
 
 	//current hero
 	var i = 0,
@@ -100,19 +96,23 @@ $(document).ready(function() {
 		
 
 
-//resize section heights on load//
 
-	$(function(){
-        var heightwindow = $(window).height();
-        $('section, #layer1').css('height', heightwindow+'px');
-    });
 
 //resize section heights on window resize//
 
     $(window).resize(function() {
     	var heightwindow = $(window).height();
-        $('section, #layer1').css('height', heightwindow+'px');
+        $('section, #layer1, .workFull').css('height', heightwindow+'px');
     });
+
+
+//resize section heights on load//
+
+    $(function(){
+        var heightwindow = $(window).height();
+        $('section, #layer1, .workFull').css('height', heightwindow+'px');
+    });
+
 
         //work full height//
 
@@ -153,7 +153,16 @@ $(document).ready(function() {
 
 
 
+     // jQuery(function($) {
+     //    var options = {
+     //    directionThreshold: 200,
+     //    slideSpeed: 500
+     //        };
 
+     //    // Basic demo
+     //    $('body,html').panelSnap(options);
+
+     //    });
 
 });
 

@@ -79,9 +79,7 @@
 
 		</div>
 
-			<div id="shelf">
-				<img src="css/img/shelf.png"/>
-			</div>
+			<div id="shelf"></div>
 
 <!--slide nav-->
 
@@ -138,7 +136,7 @@
 <!--hidden vintage-->
 
 
-				<div id="vintageFull">
+				<div class="workFull" id="vintageFull">
 					<div class="inner">
 						<h2>Vintage Wine & Market 
 
@@ -168,7 +166,7 @@
 
 <!--hidden jeremy-->
 
-				<div id="jeremyFull">
+				<div class="workFull" id="jeremyFull">
 
 						<div class="inner">
 							<h2>Jeremy David Ward | Violone & Violincello 
@@ -201,7 +199,7 @@
 					</div>
 
 
-				<div id="convergeFull">
+				<div class="workFull" id="convergeFull">
 						<div class="inner">
 							<h2>Converge
 
@@ -227,25 +225,25 @@
 <!--about section-->	
 
 <section id="aboutSection">
-	<div class="content">
 		<div class="wrapper">
 			<h1>About Me</h1>
 				<div id="description">
-					<p class="pg">I'm a classically trained musician who found himself suddenly building websites - and loving it. Maybe it's my obessive personality, or my insatiable desire to solve problems. Who knows.</p>
+					<p class="pg">I'm a classically trained musician who found himself suddenly building websites - and loving it.</p>
 				</div>
 
-				<div id="subabout1">
+				<div class="subabout">
 					<img src="css/img/dd.png"/>
 					<h2>Development & Design</h2>
-						<p class="pg">I enjoy both - functionality and beauty. I love writing front-end code and designing clean, vibrant websites. I have experience working both standard front-end web languages in both a static html context and with web appications and have some familiarity with SCSS and HAML. In addition to my freelance projects, I've also done independent contat work for Monetate, a PA-based technology company that does email-personalization tools for high-end retail companies.</p>
+						<p class="pg">I enjoy both - functionality and beauty. I love writing front-end code and designing clean, vibrant websites. In addition to my freelance projects, I've also worked as an independent contractor for Monetate, a PA-based technology company that does email-personalization tools for high-end retail companies.</p>
 				</div>
 
-				<div id="subabout2">
+				<div class="subabout">
 					<img src="css/img/conductor.png"/>
 					<h2>Conducting</h2>
 						<p class="pg">My entire life has been spent studying classical music, both at the Oberlin Conservatory and Ithaca College. My creative bent as a musician works hand in hand with my work as a web developer.</p>
 				</div>
 			</div>
+			
 		
 
 										<div class="slide-navigation">
@@ -264,7 +262,7 @@
 											</div>
 										</div>
 
-		</div>
+		
 	
 </section>
 
@@ -295,13 +293,14 @@
 		
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="js/vendor/jquery.panelSnap.js"></script>
  	<script src="js/jquery.fittext.js"></script>
  	<script>
         $("#responsive_headline").fitText();
 	</script>
 		<script type="text/javascript">
-			$("h1").fitText(1.3, { minFontSize: '25px', maxFontSize: '50px' });
+			$("h1").fitText(1.5, { minFontSize: '25px', maxFontSize: '50px' });
 			$("h3").fitText(2, { minFontSize: '10px', maxFontSize: '15px' });
 			$("h5").fitText(2, { minFontSize: '15px', maxFontSize: '25px' });
 			$(".pg").fitText(2, { minFontSize: '8px', maxFontSize: '20px' });
@@ -310,10 +309,7 @@
 
 
 
-        <script src="js/vendor/jquery-1.9.1.js"></script>
         <script src="js/vendor/jquery.tools.min.js"></script>
-        <script src="js/vendor/jquery.scroll_to.js"></script>
-        <script src="js/vendor/jquery.snapscroll.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
