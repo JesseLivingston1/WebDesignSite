@@ -159,7 +159,7 @@ max-width: 20%;
 min-width: 20%;
 margin-left: 7%;
 position: absolute;
-bottom: 182px;
+bottom: 165px;
 z-index: 99999;
 
 
@@ -548,7 +548,7 @@ backface-visibility: hidden;
 
 a:hover .icon-arrow.left.close:before{
 
-width: 20px;
+width: 21px;
 backface-visibility: hidden;
 
 
@@ -556,7 +556,7 @@ backface-visibility: hidden;
 
 a:hover .icon-arrow.left.close:after{
 
-width: 20px;
+width: 21px;
 backface-visibility: hidden;
 }
 

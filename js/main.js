@@ -152,18 +152,6 @@ $(document).ready(function() {
 		}); 
 
 
-
-     // jQuery(function($) {
-     //    var options = {
-     //    directionThreshold: 200,
-     //    slideSpeed: 500
-     //        };
-
-     //    // Basic demo
-     //    $('body,html').panelSnap(options);
-
-     //    });
-
 });
 
 $(window).load(function() {
