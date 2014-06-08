@@ -97,7 +97,6 @@ $(document).ready(function() {
 
 
 
-
 //resize section heights on window resize//
 
     $(window).resize(function() {
@@ -110,8 +109,22 @@ $(document).ready(function() {
 
     $(function(){
         var heightwindow = $(window).height();
-        $('section, #layer1, .workFull').css('height', heightwindow+'px');
+        $('section, #layer1, .workFull').css('height', heightwindow +'px');
     });
+
+
+$(function(){
+    var _top = $('section').scrollTop();
+    var individualDivHeight = $('section').height();
+
+    $(window).resize(function(){
+        var _cur_top = $('body').scrollTop();
+        var totalHeight = $('body').height();
+        var posToScroll = $('section');
+
+        $('html, body').stop().animate({scrollTop: posToScroll}, 500);
+    });
+});
 
 
         //work full height//
@@ -150,6 +163,8 @@ $(document).ready(function() {
             scrollTop: $("#contactSection").offset().top});
 
 		}); 
+
+
 
 
 });
