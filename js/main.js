@@ -113,20 +113,6 @@ $(document).ready(function() {
     });
 
 
-$(function(){
-    var _top = $('section').scrollTop();
-    var individualDivHeight = $('section').height();
-
-    $(window).resize(function(){
-        var _cur_top = $('body').scrollTop();
-        var totalHeight = $('body').height();
-        var posToScroll = $('section');
-
-        $('html, body').stop().animate({scrollTop: posToScroll}, 500);
-    });
-});
-
-
         //work full height//
 
     $(function(){
@@ -134,7 +120,7 @@ $(function(){
         var vintageH = $('#vintageFull, #jeremyFull, #convergeFull').height();
         if(windowH > vintageH) {                            
             $('#vintageFull, #jeremyFull, #convergeFull').css({'height':($(window).height())+'px'});
-    }   
+            }   
 
     });   
 
@@ -142,7 +128,7 @@ $(function(){
 
 	//nav vertical scroll//
 
-	$("#header-logo, #upwork").click(function() {
+	$("#upwork").click(function() {
         $('html, body').animate({
             scrollTop: $("#landing").offset().top});
        }); 
@@ -163,9 +149,6 @@ $(function(){
             scrollTop: $("#contactSection").offset().top});
 
 		}); 
-
-
-
 
 });
 
