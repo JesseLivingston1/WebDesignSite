@@ -6,23 +6,35 @@ $(document).ready(function() {
   toggle('#linkJeremy', '#jeremyClose', '#jeremyFull');
   toggle('#linkConverge','#convergeClose','#convergeFull');
 
+    function visibilityHide() {
+        $('section').hide();
+    };
+
+    function visibilityShow() {
+        $('section').show();
+    };
+
+    function displayHero() {
+        $.scrollTo('#hero');
+    };
  
-	function hideGlobalOverflow() {
-	  $('html').css('overflow', 'hidden');
-	};
- 
-	function showGlobalOverflow() {
-	  $('html').css('overflow', 'visible');
-	};
+if( window.addEventListener ){
+    window.addEventListener("load",function() {
+        window.scrollTo(0, 0);
+    });
+};
   
 	function toggle(openLink, closeLink, container) {
 		  $(openLink).click(function() {
-		    $(container).fadeIn("medium");
-		    hideGlobalOverflow();
+            visibilityHide();
+            $(container).fadeIn("medium");
 		  });
+
 		  $(closeLink).click(function() {
-		    $(container).fadeOut("medium");
-		    showGlobalOverflow();
+            visibilityShow();
+            $(container).fadeOut("medium");
+            displayHero();
+            
 		  });
 	};
 
