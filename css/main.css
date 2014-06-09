@@ -719,6 +719,19 @@ opacity: 1;
 }
 
 
+.prev-project.left.disabled{
+opacity: .5;
+cursor: default;
+pointer-events: none;
+}
+
+/*.next-project.right.disabled{
+opacity: .5;
+cursor: default;
+pointer-events: none;
+}
+*/
+
 
     
 /* ==========================================================================
@@ -1205,7 +1218,7 @@ box-sizing: border-box;
 
       }
 
-      
+
       a:hover .seemore {
         padding-left: 0;
 
