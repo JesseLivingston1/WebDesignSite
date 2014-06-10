@@ -46,15 +46,6 @@ if( window.addEventListener ){
 		var div = $(this).attr('class').split(" ")[0];
 		$('body').scrollTo( $('#'+div), 800 );
 	});
-
-	$(window).scroll(function(){
-		var top = $(this).scrollTop();
-		if (top > 36) {
-			$('nav').fadeIn(500);
-		} else {
-			$('nav').fadeOut(500);
-		}
-	});
 	
 	//hero horizontal move function
 	function move(speed){
@@ -66,8 +57,6 @@ if( window.addEventListener ){
 			$('#hero .desc:eq('+i+')').fadeIn(speed/2);
 		});
 	}
-
-
 
 	//set hero position on window resize
 	$(window).resize(function(){
@@ -81,32 +70,29 @@ if( window.addEventListener ){
 		move(2000);
 	});
 
+    //hero section next
+    $('#hero #next').click(function(){
+        if (i < 2) {
+            i++;
+            move(1000);
+            $('#hero #prev').removeClass('disabled');
+        }
+        if (i == 2){
+            $('#hero #next').addClass('disabled');
+        }
+    });
+
 	//hero section prev
 	$('#hero #prev').click(function(){
 		if (i > 0) {
 			i--;
 			move(1000);
 			$('#hero #next').removeClass('disabled');
-		}
+		   }
 		if (i == 0){
 			$('#hero #prev').addClass('disabled');
 		}
 	});
-
-	//hero section next
-	$('#hero #next').click(function(){
-		if (i < 2) {
-			i++;
-			move(1000);
-			$('#hero #prev').removeClass('disabled');
-		}
-		if (i == 2){
-			$('#hero #next').addClass('disabled');
-		}
-	});
-
-		
-
 
 
 //resize section heights on window resize//

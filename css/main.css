@@ -111,7 +111,7 @@ h1 {
 body {
 
 height:400%;
-overflow-y: auto;
+overflow-y: hidden;
 overflow-x: hidden;
 }
 
@@ -394,7 +394,6 @@ float: left;
 display: inline-block;
 width: 15px;
 padding: 30px 35px 30px 28px;
-
 }
 
 .slide-navigation.hid .slide-nav-button {
@@ -403,11 +402,7 @@ display: inline-block;
 width: 50px;
 height:50px;
 padding: 0;
-
 }
-
-
-
 
 .slide-nav-button .next-project {
   display:inline-block;
@@ -432,8 +427,6 @@ transition-delay: 0.1s;
  -webkit-transition: all .4s ease;
  -moz-transition: all .4s ease;
  transition: all .4s ease;
-
-
 }
 
 
@@ -482,9 +475,6 @@ margin-top:0;
 -o-transform: translateX(5px);
 margin-top:0;
 }
-
-
-
 
 .icon-arrow.up:before, .icon-arrow.up:after {
 top: 0;
@@ -719,18 +709,12 @@ opacity: 1;
 }
 
 
-.prev-project.left.disabled{
+.disabled{
 opacity: .5;
 cursor: default;
 pointer-events: none;
 }
 
-/*.next-project.right.disabled{
-opacity: .5;
-cursor: default;
-pointer-events: none;
-}
-*/
 
 
     
@@ -1062,7 +1046,6 @@ margin-right:5%;
 #send{
   display:block;
   margin-top:10%;
-  margin-bottom: 100px;
   clear:both;
   margin-left:auto;
   margin-right:auto;
@@ -1086,12 +1069,41 @@ z-index: 0;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
-width: 120px;
+width: 100px;
 }
 
-#send:hover{
+#send:hover, #call:hover{
   background-color: black;
   color:white;
+}
+
+#call{
+  display:block;
+  clear:both;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: 1px solid black;
+color: black;
+background: 0 0;
+padding: 10px 20px;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2px;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+z-index: 0;
+-webkit-transition: all .3s ease-out;
+-moz-transition: all .3s ease-out;
+-o-transition: all .3s ease-out;
+transition: all .3s ease-out;
+width: 130px;
 }
 
 #contactSection h5{
