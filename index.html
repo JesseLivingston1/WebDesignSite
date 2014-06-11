@@ -170,19 +170,26 @@
 		<div class="wrapper">
 			<h1>About Me</h1>
 				<div id="description">
-					<p class="pg">I'm a classically trained musician who found himself suddenly building websites - and loving it.</p>
+				<span>
+					<img src="css/img/aboutphoto2.png"/>
+				</span>
+					<p class="pg">I'm a classically trained musician who found himself building websites - and loving it.</p>
+				
+
+
+
 				</div>
 
 				<div class="subabout">
 					<img src="css/img/dd.png"/>
 					<h2>Development & Design</h2>
-						<p class="pg">I enjoy both - functionality and beauty. I love writing front-end code and designing clean, vibrant websites. In addition to my freelance projects, I've also worked as an independent contractor for Monetate, a PA-based technology company that does email-personalization tools for high-end retail companies.</p>
+						<p class="pg">I enjoy both. I love writing front-end code and designing clean, vibrant websites. In addition to my freelance projects, I've also worked as an independent contractor for Monetate, a PA-based technology company that provides email-personalization tools for high-end retail clients.</p>
 				</div>
 
 				<div class="subabout">
 					<img src="css/img/conductor.png"/>
 					<h2>Conducting</h2>
-						<p class="pg">My entire life has been spent studying classical music, both at the Oberlin Conservatory and Ithaca College. My creative bent as a musician works hand in hand with my work as a web developer.</p>
+						<p class="pg">My entire life has been spent studying classical music, both at the Oberlin Conservatory and Ithaca College. My creative bent as a musician works hand in hand with my work as a web developer. Check out my <a href="https://www.youtube.com/user/jesselivingston1" target="_blank">YouTube channel</a> for work samples.</p>
 				</div>
 			</div>
 			
@@ -218,7 +225,7 @@
 			<h1>Contact</h1>
 				<p class="pg"id="contactp">Like what you saw? We should talk.</p>
 					<a id="send" a href="mailto:jesselivingston1@gmail.com">Email</a>
-					<a id="call" a href="tel:+1-919-449-5977">+1-919-449-5977</a>
+					<a id="call" a href="tel:+1-919-449-5977">Call me</a>
 		</div>
 
 
@@ -240,16 +247,17 @@
 
 				<div class="workFull" id="vintageFull">
 					<div class="inner">
-						<h2>Vintage Wine & Market 
+						<div class="fullcontainer">
+								<div class="slide-navigation hid">
+											<a id="vintageClose" class="slide-nav-button prev-project left">
+												<i class="icon-arrow left close"></i>
+											</a>
+								</div>
+									<h3>Vintage Wine & Market </h3>
 
-							<div class="slide-navigation hid">
-									<a id="vintageClose" class="slide-nav-button prev-project left">
-										<i class="icon-arrow left close"></i>
-									</a>
 							</div>
+										<p>A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
 
-						</h2>
-							<p>A fully-responsive design allowing for instant mobile compatibility and symetrical display across multiple sized viewports, and utilizes parse.js for email storage.</p>
 
 								<img src="img/vintagefull.jpg"/>
 					</div>	
@@ -258,9 +266,8 @@
 <!--hidden jeremy-->
 
 				<div class="workFull" id="jeremyFull">
-
 						<div class="inner">
-							<h2>Jeremy David Ward | Violone & Violincello 
+							<h3>Jeremy David Ward | Violone & Violincello 
 
 								<div class="slide-navigation hid">
 										<a id="jeremyClose" class="slide-nav-button prev-project left">
@@ -269,7 +276,7 @@
 								</div>
 
 
-							</h2>
+							</h3>
 								<p>A clean, professional design built within a Bootstrap framework for fully-responsive capabilities. It also features a mini-CMS via a handlebar.js application allowing the client to update his calendar through a Google spreadsheet.</p>
 
 						<img src="img/jeremyhome.jpg"/>
@@ -283,7 +290,7 @@
 
 				<div class="workFull" id="convergeFull">
 						<div class="inner">
-							<h2>Converge
+							<h3>Converge
 
 								<div class="slide-navigation hid">
 										<a id="convergeClose" class="slide-nav-button prev-project left">
@@ -291,7 +298,7 @@
 										</a>
 								</div>
 
-							</h2>
+							</h3>
 								<p> Featured by non-profit YWAM, "Converge" is a collaboration of many web developers world-wide using Ruby on Rails, HAML, SCSS, and CoffeeScript/JQuery. It aids in connecting students across the globe with internships in a wide range of study.</p>
 
 								<img src="img/ipo1.jpg"/>
@@ -311,8 +318,8 @@
         $("#responsive_headline").fitText();
 	</script>
 		<script type="text/javascript">
-			$("h1").fitText(2, { minFontSize: '25px', maxFontSize: '50px' });
-			$("h3").fitText(2, { minFontSize: '10px', maxFontSize: '15px' });
+			$("h1").fitText(1.2, { minFontSize: '25px', maxFontSize: '50px' });
+			$("h3").fitText(1, { minFontSize: '30px', maxFontSize: '40px' });
 			$("h5").fitText(2, { minFontSize: '15px', maxFontSize: '25px' });
 			$(".pg").fitText(2, { minFontSize: '8px', maxFontSize: '20px' });
 

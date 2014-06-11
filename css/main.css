@@ -151,7 +151,22 @@ section{
  
 }
 
+h3 {
+  font-family: 'Lato', sans-serif;
+  color:white;
+  text-align: center;
+}
 
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.fullcontainer {
+  width:83%;
+  margin-left:auto;
+  margin-right:auto;
+}
 
 #layer1 img {
 
@@ -366,6 +381,7 @@ position: relative;
 float: right;
 width: 40px;
 padding: 0;
+height: 30px;
 }
 
 .slide-nav-container{
@@ -524,12 +540,13 @@ transition: all 0.3s;
 position: absolute;
 display: block;
 content: " ";
-width: 40px;
+width: 20px;
 height: 3px;
 background-color: #FFF;
 transition: all 0.3s ease 0s;
 bottom: 0px;
 left: 0px;
+
 transform-origin: 19.5px 1.5px 0px;
 -webkit-transform-origin: 19.5px 1.5px 0px;
 -moz-transform-origin: 19.5px 1.5px 0px;
@@ -540,28 +557,31 @@ backface-visibility: hidden;
 
 a:hover .icon-arrow.left.close:before{
 
-width: 21px;
+width: 40px;
 backface-visibility: hidden;
+top:10px;
 
 
   }
 
 a:hover .icon-arrow.left.close:after{
 
-width: 21px;
+width: 40px;
 backface-visibility: hidden;
+top:10px;
 }
 
 .icon-arrow.left.close:after{
   position: absolute;
 display: block;
 content: " ";
-width: 40px;
+width: 20px;
 height: 3px;
 background-color: #FFF;
 transition: all 0.3s ease 0s;
 bottom: 0px;
 left: 0px;
+top:22px;
 transform-origin: 19.5px 1.5px 0px;
 -webkit-transform-origin: 19.5px 1.5px 0px;
 -moz-transform-origin: 19.5px 1.5px 0px;
@@ -667,14 +687,14 @@ height: 0;
 
 .icon-arrow.left span{
 top: 9px;
-left: 11px;
+left: 13px;
 width: 3px;
 height: 0;
 }
 
 .icon-arrow.right span{
 top: 9px;
-right: 12px;
+right: 13px;
 width: 3px;
 height: 0;
 }
@@ -946,13 +966,13 @@ opacity: 1;
     margin:5% 0 5% 0;
 }   
 
-.inner h2 {
+.inner h3 {
 font-family: 'Lato', sans-serif;
 color: white;
 text-align: center;
 font-weight: normal;
 text-align: center;
-margin-top:5%;
+height:100%;
 z-index:10;
 }
 
@@ -963,6 +983,14 @@ z-index:10;
     font-size: 15px;
     z-index:10;
     text-align: center;
+}
+
+.innerheader {
+  width:100%;
+  position:fixed;
+  background-color:#201f1f;
+  height:50px;
+  text-align: center;
 }
 
 #jeremy, #converge {
@@ -979,13 +1007,24 @@ z-index:10;
    ========================================================================== */
 #aboutSection {
 text-align: center;
+margin-bottom: 50px
 }
 
-#aboutSection h2 {
-font-family: 'Lato', sans-serif;
-font-weight: 400;
+#aboutSection p {
+  margin-top:0;
+}
+.subabout a {
+  text-decoration: none;
+  color:black;
+   border-bottom: 1px solid rgba(0,0,0,0);;
+  -webkit-transition: all .4s ease;
+ -moz-transition: all .4s ease;
+ transition: all .4s ease;
 }
 
+.subabout a:hover {
+   border-bottom-color: black;
+}
 
 #description p{
   font-size: 25px;
@@ -994,7 +1033,7 @@ font-weight: 400;
 .subabout{
   width:44%;
   float:left;
- padding:10% 3% 0 3%;
+ padding:5% 3% 0 3%;
 }
 
 .subabout img{
@@ -1004,14 +1043,11 @@ width:20%;
 
 
 
+
 /* ==========================================================================
    contact styles
    ========================================================================== */
-/*form {
-  display:block;
-  font-family: 'Lato', sans-serif;
-  width:100%;
-}*/
+
 
 .container.contact{
   width:66%;
@@ -1025,23 +1061,6 @@ width:20%;
   font-size: 25px;
 }
 
-/*#contactarea input{
-  width:50%;
-}
-*/
-/*#rightcontact {
-float: right;
-width: 45%;
-margin-left:5%;
-margin-bottom: 10%;
-}
-
-#leftcontact {
-float: left;
-width: 45%;
-margin-right:5%;
-}
-*/
 
 #send{
   display:block;
@@ -1083,6 +1102,7 @@ width: 100px;
   margin-left:auto;
   margin-right:auto;
   margin-top:50px;
+  margin-bottom:80px;
   text-decoration: none;
   text-align: center;
   -webkit-border-radius: 20px;
@@ -1103,7 +1123,7 @@ z-index: 0;
 -moz-transition: all .3s ease-out;
 -o-transition: all .3s ease-out;
 transition: all .3s ease-out;
-width: 130px;
+width: 100px;
 }
 
 #contactSection h5{
@@ -1137,6 +1157,13 @@ box-sizing: border-box;
 
 /*Desktops and Laptops*/
 
+@media (min-width:1300px){
+      #call {
+        display:none;
+      }
+
+}
+
 @media (min-width:1024px) and (max-width:1300px){
         #layer1 img {
 
@@ -1155,6 +1182,10 @@ box-sizing: border-box;
         width:83%;
         margin-left:auto;
         margin-right:auto;
+      }
+
+      #call {
+        display:none;
       }
 
 }

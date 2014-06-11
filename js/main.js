@@ -111,22 +111,25 @@ if( window.addEventListener ){
     });
 
 
+
+
+
 //snap to closest section//
 
-    $(function(){
-        var _top = $(window).scrollTop();
-        var individualDivHeight = $(window).height();
+//     $(function(){
+//         var _top = $(window).scrollTop();
+//         var individualDivHeight = $(window).height();
 
-    $(window).resize(function(){
-        var _cur_top = $(window).scrollTop();
-        var totalHeight = $('section').height();
-        var posToScroll = Math.round(_cur_top / individualDivHeight) * individualDivHeight;
+//     $(window).resize(function(){
+//         var _cur_top = $(window).scrollTop();
+//         var totalHeight = $('section').height();
+//         var posToScroll = Math.round(_cur_top / individualDivHeight) * individualDivHeight;
 
-        $('html, body').stop().animate({scrollTop: posToScroll}, 200);
+//         $('html, body').stop().animate({scrollTop: posToScroll}, 200);
 
-    });
+//     });
 
-});
+// });
 
 
 
