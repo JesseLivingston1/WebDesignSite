@@ -31,8 +31,8 @@ if( window.addEventListener ){
 		  });
 
 		  $(closeLink).click(function() {
-            visibilityShow();
             $(container).fadeOut("medium");
+            visibilityShow();
             displayHero();
             
 		  });
