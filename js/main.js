@@ -2,9 +2,9 @@
 
 $(document).ready(function() {
   //workFull invisible toggle
-  toggle('#linkVintage', '#vintageClose', '#vintageFull');
-  toggle('#linkJeremy', '#jeremyClose', '#jeremyFull');
-  toggle('#linkConverge','#convergeClose','#convergeFull');
+  toggle('.show.one', '#vintageClose', '#vintageFull');
+  toggle('.show.two', '#jeremyClose', '#jeremyFull');
+  toggle('.show.three','#convergeClose','#convergeFull');
 
     function visibilityHide() {
         $('section').hide();
@@ -131,9 +131,6 @@ if( window.addEventListener ){
 
 // });
 
-
-
-
         //work full height//
 
     $(function(){
@@ -144,7 +141,6 @@ if( window.addEventListener ){
             }   
 
     });   
-
 
 
 	//nav vertical scroll//
